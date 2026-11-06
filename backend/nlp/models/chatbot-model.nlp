@@ -1,0 +1,5892 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": true,
+    "nlu": {
+      "log": false
+    },
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager",
+      "log": false
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "emerg": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "an,emerg,is,this": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "chest,pain": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "attack,heart": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "a,attack,have,heart": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "stroke,symptom": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "bleed,sever": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "unconsci": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "breath,not": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "breath,difficulti": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "breath,ca,not": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "breath,can,not": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "suicid,thought": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "hurt,myself,to,want": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "ambul,need": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "ambul,call": {
+            "intent": "emergency",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hii": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "even,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hi,there": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hello,there": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "connect,hey,medi": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "start": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "a,have,headach,i": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "headach": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "bad,headach": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "migrain": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "migrain,sever": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "head,pain": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "head,hurt,my": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "headach,pound": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "headach,tension": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "ach,head": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "head,in,my,pain": {
+            "intent": "symptom.headache",
+            "domain": "default"
+          },
+          "fever,have,i": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "fever,high": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "and,cold,cough": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "and,cold,fever": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "nose,run": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "sore,throat": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "flu,symptom": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "ach,and,bodi,chill": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "a,lot,sneez": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "bad,cough": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "fever,viral": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "high,is,temperatur": {
+            "intent": "symptom.fever_cold",
+            "domain": "default"
+          },
+          "problem,skin": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "rash,skin": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "acn,face,on": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "pimpl": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "all,itch,over": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "eczema,flare,up": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "allergi,skin": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "hive,on,skin": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "fungal,infect": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "ringworm": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "dandruff": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "fall,hair": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "dri,itchi,skin": {
+            "intent": "symptom.skin",
+            "domain": "default"
+          },
+          "pain,stomach": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "ach,stomach": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "acid,problem": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "gastric,issu": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "constip": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "diarrhea": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "loos,motion": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "and,nausea,vomit": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "indigest": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "and,bloat,gas": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "food,poison": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "stomach,upset": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "digest,problem": {
+            "intent": "symptom.stomach",
+            "domain": "default"
+          },
+          "pregnanc,question": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "irregular,period": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "cramp,period": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "menstrual,pain": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "pcod,symptom": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "help,pcos": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "gynecologist,need": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "advic,birth,control": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "miss,period": {
+            "intent": "symptom.womens_health",
+            "domain": "default"
+          },
+          "child,is,my,sick": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "babi,fever,has": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "eat,kid,not": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "toddler,vomit": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "health,infant": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "child,vaccin": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "has,my,rash,son": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "cough,daughter,has,my": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "help,pediatr": {
+            "intent": "symptom.child_health",
+            "domain": "default"
+          },
+          "back,pain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "back,hurt,lower": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "joint,pain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "knee,pain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "arthriti,pain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "muscl,pain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "ankl,sprain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "neck,pain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "pain,shoulder": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "bodi,pain": {
+            "intent": "symptom.pain",
+            "domain": "default"
+          },
+          "feel,stress": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "anxieti,attack": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "depress": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "can,not,sleep": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "insomnia": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "health,help,mental": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "attack,panic": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "feel,worri": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "late,sad,veri": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "at,stress,work": {
+            "intent": "symptom.mental_health",
+            "domain": "default"
+          },
+          "eye,problem": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "blurri,vision": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "eye,red": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "eye,irrit": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "glass,need": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "get,vision,wors": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "burn,eye": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "dri,eye": {
+            "intent": "symptom.eye",
+            "domain": "default"
+          },
+          "appoint,book": {
+            "intent": "booking",
+            "domain": "default"
+          },
+          "book,how,to": {
+            "intent": "booking",
+            "domain": "default"
+          },
+          "appoint,schedul": {
+            "intent": "booking",
+            "domain": "default"
+          },
+          "book,help,me": {
+            "intent": "booking",
+            "domain": "default"
+          },
+          "book,doctor,to,want": {
+            "intent": "booking",
+            "domain": "default"
+          },
+          "an,appoint,make": {
+            "intent": "booking",
+            "domain": "default"
+          },
+          "book,help": {
+            "intent": "booking",
+            "domain": "default"
+          },
+          "doctor,show": {
+            "intent": "find_doctor",
+            "domain": "default"
+          },
+          "doctor,list": {
+            "intent": "find_doctor",
+            "domain": "default"
+          },
+          "avail,doctor": {
+            "intent": "find_doctor",
+            "domain": "default"
+          },
+          "a,find,specialist": {
+            "intent": "find_doctor",
+            "domain": "default"
+          },
+          "are,avail,doctor,which": {
+            "intent": "find_doctor",
+            "domain": "default"
+          },
+          "me,show,specialist": {
+            "intent": "find_doctor",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "thank": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "help,that,was": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "a,lot,thank": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "appreci,help,your": {
+            "intent": "thanks",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "emergency": "default",
+          "greeting": "default",
+          "symptom.headache": "default",
+          "symptom.fever_cold": "default",
+          "symptom.skin": "default",
+          "symptom.stomach": "default",
+          "symptom.womens_health": "default",
+          "symptom.child_health": "default",
+          "symptom.pain": "default",
+          "symptom.mental_health": "default",
+          "symptom.eye": "default",
+          "booking": "default",
+          "find_doctor": "default",
+          "thanks": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "emergency",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "this is an emergency",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "chest pain",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "heart attack",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "having a heart attack",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "stroke symptoms",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "severe bleeding",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "unconscious",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "not breathing",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "difficulty breathing",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "can't breathe",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "cannot breathe",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "suicidal thoughts",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "want to hurt myself",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "need ambulance",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "call ambulance",
+            "intent": "emergency"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hii",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi there",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello there",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey medi connect",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "start",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "I have a headache",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "headache",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "bad headache",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "migraine",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "severe migraine",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "head pain",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "my head hurts",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "pounding headache",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "tension headache",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "head ache",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "pain in my head",
+            "intent": "symptom.headache"
+          },
+          {
+            "domain": "default",
+            "utterance": "I have fever",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "high fever",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "cold and cough",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "fever and cold",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "running nose",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "sore throat",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "flu symptoms",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "body ache and chills",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "sneezing a lot",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "coughing badly",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "viral fever",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "temperature is high",
+            "intent": "symptom.fever_cold"
+          },
+          {
+            "domain": "default",
+            "utterance": "skin problem",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "skin rash",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "acne on face",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "pimples",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "itching all over",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "eczema flare up",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "skin allergy",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "hives on skin",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "fungal infection",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "ringworm",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "dandruff",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "hair fall",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "dry itchy skin",
+            "intent": "symptom.skin"
+          },
+          {
+            "domain": "default",
+            "utterance": "stomach pain",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "stomach ache",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "acidity problem",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "gastric issues",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "constipation",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "diarrhea",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "loose motion",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "nausea and vomiting",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "indigestion",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "bloating and gas",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "food poisoning",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "upset stomach",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "digestive problem",
+            "intent": "symptom.stomach"
+          },
+          {
+            "domain": "default",
+            "utterance": "pregnancy question",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "irregular periods",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "period cramps",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "menstrual pain",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "pcod symptoms",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "pcos help",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "gynecologist needed",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "birth control advice",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "missed period",
+            "intent": "symptom.womens_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "my child is sick",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "baby has fever",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "kid not eating",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "toddler vomiting",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "infant health",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "child vaccination",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "my son has rash",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "my daughter has cough",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "pediatric help",
+            "intent": "symptom.child_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "back pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "lower back hurts",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "joint pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "knee pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "arthritis pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "muscle pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "sprained ankle",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "neck pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "shoulder pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "body pain",
+            "intent": "symptom.pain"
+          },
+          {
+            "domain": "default",
+            "utterance": "feeling stressed",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "anxiety attack",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "depressed",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "cannot sleep",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "insomnia",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "mental health help",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "panic attacks",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "feeling worried",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "very sad lately",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "stress at work",
+            "intent": "symptom.mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "eye problem",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "blurry vision",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "red eye",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "eye irritation",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "need glasses",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "vision getting worse",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "eyes burning",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "dry eyes",
+            "intent": "symptom.eye"
+          },
+          {
+            "domain": "default",
+            "utterance": "book appointment",
+            "intent": "booking"
+          },
+          {
+            "domain": "default",
+            "utterance": "how to book",
+            "intent": "booking"
+          },
+          {
+            "domain": "default",
+            "utterance": "schedule appointment",
+            "intent": "booking"
+          },
+          {
+            "domain": "default",
+            "utterance": "help me book",
+            "intent": "booking"
+          },
+          {
+            "domain": "default",
+            "utterance": "want to book doctor",
+            "intent": "booking"
+          },
+          {
+            "domain": "default",
+            "utterance": "make an appointment",
+            "intent": "booking"
+          },
+          {
+            "domain": "default",
+            "utterance": "booking help",
+            "intent": "booking"
+          },
+          {
+            "domain": "default",
+            "utterance": "show doctors",
+            "intent": "find_doctor"
+          },
+          {
+            "domain": "default",
+            "utterance": "list doctors",
+            "intent": "find_doctor"
+          },
+          {
+            "domain": "default",
+            "utterance": "available doctors",
+            "intent": "find_doctor"
+          },
+          {
+            "domain": "default",
+            "utterance": "find a specialist",
+            "intent": "find_doctor"
+          },
+          {
+            "domain": "default",
+            "utterance": "which doctors are available",
+            "intent": "find_doctor"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me specialists",
+            "intent": "find_doctor"
+          },
+          {
+            "domain": "default",
+            "utterance": "doctor list",
+            "intent": "find_doctor"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "that was helpful",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks a lot",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "appreciate your help",
+            "intent": "thanks"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "emerg": 1,
+              "this": 1,
+              "is": 1,
+              "an": 1,
+              "chest": 1,
+              "pain": 1,
+              "heart": 1,
+              "attack": 1,
+              "have": 1,
+              "a": 1,
+              "stroke": 1,
+              "symptom": 1,
+              "sever": 1,
+              "bleed": 1,
+              "unconsci": 1,
+              "not": 1,
+              "breath": 1,
+              "difficulti": 1,
+              "ca": 1,
+              "can": 1,
+              "suicid": 1,
+              "thought": 1,
+              "want": 1,
+              "to": 1,
+              "hurt": 1,
+              "myself": 1,
+              "need": 1,
+              "ambul": 1,
+              "call": 1,
+              "hello": 1,
+              "hi": 1,
+              "hey": 1,
+              "hii": 1,
+              "good": 1,
+              "morn": 1,
+              "even": 1,
+              "afternoon": 1,
+              "there": 1,
+              "medi": 1,
+              "connect": 1,
+              "start": 1,
+              "i": 1,
+              "headach": 1,
+              "bad": 1,
+              "migrain": 1,
+              "head": 1,
+              "my": 1,
+              "pound": 1,
+              "tension": 1,
+              "ach": 1,
+              "in": 1,
+              "fever": 1,
+              "high": 1,
+              "cold": 1,
+              "and": 1,
+              "cough": 1,
+              "run": 1,
+              "nose": 1,
+              "sore": 1,
+              "throat": 1,
+              "flu": 1,
+              "bodi": 1,
+              "chill": 1,
+              "sneez": 1,
+              "lot": 1,
+              "viral": 1,
+              "temperatur": 1,
+              "skin": 1,
+              "problem": 1,
+              "rash": 1,
+              "acn": 1,
+              "on": 1,
+              "face": 1,
+              "pimpl": 1,
+              "itch": 1,
+              "all": 1,
+              "over": 1,
+              "eczema": 1,
+              "flare": 1,
+              "up": 1,
+              "allergi": 1,
+              "hive": 1,
+              "fungal": 1,
+              "infect": 1,
+              "ringworm": 1,
+              "dandruff": 1,
+              "hair": 1,
+              "fall": 1,
+              "dri": 1,
+              "itchi": 1,
+              "stomach": 1,
+              "acid": 1,
+              "gastric": 1,
+              "issu": 1,
+              "constip": 1,
+              "diarrhea": 1,
+              "loos": 1,
+              "motion": 1,
+              "nausea": 1,
+              "vomit": 1,
+              "indigest": 1,
+              "bloat": 1,
+              "gas": 1,
+              "food": 1,
+              "poison": 1,
+              "upset": 1,
+              "digest": 1,
+              "pregnanc": 1,
+              "question": 1,
+              "irregular": 1,
+              "period": 1,
+              "cramp": 1,
+              "menstrual": 1,
+              "pcod": 1,
+              "pcos": 1,
+              "help": 1,
+              "gynecologist": 1,
+              "birth": 1,
+              "control": 1,
+              "advic": 1,
+              "miss": 1,
+              "child": 1,
+              "sick": 1,
+              "babi": 1,
+              "has": 1,
+              "kid": 1,
+              "eat": 1,
+              "toddler": 1,
+              "infant": 1,
+              "health": 1,
+              "vaccin": 1,
+              "son": 1,
+              "daughter": 1,
+              "pediatr": 1,
+              "back": 1,
+              "lower": 1,
+              "joint": 1,
+              "knee": 1,
+              "arthriti": 1,
+              "muscl": 1,
+              "sprain": 1,
+              "ankl": 1,
+              "neck": 1,
+              "shoulder": 1,
+              "feel": 1,
+              "stress": 1,
+              "anxieti": 1,
+              "depress": 1,
+              "sleep": 1,
+              "insomnia": 1,
+              "mental": 1,
+              "panic": 1,
+              "worri": 1,
+              "veri": 1,
+              "sad": 1,
+              "late": 1,
+              "at": 1,
+              "work": 1,
+              "eye": 1,
+              "blurri": 1,
+              "vision": 1,
+              "red": 1,
+              "irrit": 1,
+              "glass": 1,
+              "get": 1,
+              "wors": 1,
+              "burn": 1,
+              "book": 1,
+              "appoint": 1,
+              "how": 1,
+              "schedul": 1,
+              "me": 1,
+              "doctor": 1,
+              "make": 1,
+              "show": 1,
+              "list": 1,
+              "avail": 1,
+              "find": 1,
+              "specialist": 1,
+              "which": 1,
+              "are": 1,
+              "thank": 1,
+              "you": 1,
+              "that": 1,
+              "was": 1,
+              "appreci": 1,
+              "your": 1
+            },
+            "intents": {
+              "emergency": 1,
+              "greeting": 1,
+              "symptom.headache": 1,
+              "symptom.fever_cold": 1,
+              "symptom.skin": 1,
+              "symptom.stomach": 1,
+              "symptom.womens_health": 1,
+              "symptom.child_health": 1,
+              "symptom.pain": 1,
+              "symptom.mental_health": 1,
+              "symptom.eye": 1,
+              "booking": 1,
+              "find_doctor": 1,
+              "thanks": 1
+            },
+            "intentFeatures": {
+              "emergency": {
+                "emerg": 1,
+                "this": 1,
+                "is": 1,
+                "an": 1,
+                "chest": 1,
+                "pain": 1,
+                "heart": 1,
+                "attack": 1,
+                "have": 1,
+                "a": 1,
+                "stroke": 1,
+                "symptom": 1,
+                "sever": 1,
+                "bleed": 1,
+                "unconsci": 1,
+                "not": 1,
+                "breath": 1,
+                "difficulti": 1,
+                "ca": 1,
+                "can": 1,
+                "suicid": 1,
+                "thought": 1,
+                "want": 1,
+                "to": 1,
+                "hurt": 1,
+                "myself": 1,
+                "need": 1,
+                "ambul": 1,
+                "call": 1
+              },
+              "greeting": {
+                "hello": 1,
+                "hi": 1,
+                "hey": 1,
+                "hii": 1,
+                "good": 1,
+                "morn": 1,
+                "even": 1,
+                "afternoon": 1,
+                "there": 1,
+                "medi": 1,
+                "connect": 1,
+                "start": 1
+              },
+              "symptom.headache": {
+                "i": 1,
+                "have": 1,
+                "a": 1,
+                "headach": 1,
+                "bad": 1,
+                "migrain": 1,
+                "sever": 1,
+                "head": 1,
+                "pain": 1,
+                "my": 1,
+                "hurt": 1,
+                "pound": 1,
+                "tension": 1,
+                "ach": 1,
+                "in": 1
+              },
+              "symptom.fever_cold": {
+                "i": 1,
+                "have": 1,
+                "fever": 1,
+                "high": 1,
+                "cold": 1,
+                "and": 1,
+                "cough": 1,
+                "run": 1,
+                "nose": 1,
+                "sore": 1,
+                "throat": 1,
+                "flu": 1,
+                "symptom": 1,
+                "bodi": 1,
+                "ach": 1,
+                "chill": 1,
+                "sneez": 1,
+                "a": 1,
+                "lot": 1,
+                "bad": 1,
+                "viral": 1,
+                "temperatur": 1,
+                "is": 1
+              },
+              "symptom.skin": {
+                "skin": 1,
+                "problem": 1,
+                "rash": 1,
+                "acn": 1,
+                "on": 1,
+                "face": 1,
+                "pimpl": 1,
+                "itch": 1,
+                "all": 1,
+                "over": 1,
+                "eczema": 1,
+                "flare": 1,
+                "up": 1,
+                "allergi": 1,
+                "hive": 1,
+                "fungal": 1,
+                "infect": 1,
+                "ringworm": 1,
+                "dandruff": 1,
+                "hair": 1,
+                "fall": 1,
+                "dri": 1,
+                "itchi": 1
+              },
+              "symptom.stomach": {
+                "stomach": 1,
+                "pain": 1,
+                "ach": 1,
+                "acid": 1,
+                "problem": 1,
+                "gastric": 1,
+                "issu": 1,
+                "constip": 1,
+                "diarrhea": 1,
+                "loos": 1,
+                "motion": 1,
+                "nausea": 1,
+                "and": 1,
+                "vomit": 1,
+                "indigest": 1,
+                "bloat": 1,
+                "gas": 1,
+                "food": 1,
+                "poison": 1,
+                "upset": 1,
+                "digest": 1
+              },
+              "symptom.womens_health": {
+                "pregnanc": 1,
+                "question": 1,
+                "irregular": 1,
+                "period": 1,
+                "cramp": 1,
+                "menstrual": 1,
+                "pain": 1,
+                "pcod": 1,
+                "symptom": 1,
+                "pcos": 1,
+                "help": 1,
+                "gynecologist": 1,
+                "need": 1,
+                "birth": 1,
+                "control": 1,
+                "advic": 1,
+                "miss": 1
+              },
+              "symptom.child_health": {
+                "my": 1,
+                "child": 1,
+                "is": 1,
+                "sick": 1,
+                "babi": 1,
+                "has": 1,
+                "fever": 1,
+                "kid": 1,
+                "not": 1,
+                "eat": 1,
+                "toddler": 1,
+                "vomit": 1,
+                "infant": 1,
+                "health": 1,
+                "vaccin": 1,
+                "son": 1,
+                "rash": 1,
+                "daughter": 1,
+                "cough": 1,
+                "pediatr": 1,
+                "help": 1
+              },
+              "symptom.pain": {
+                "back": 1,
+                "pain": 1,
+                "lower": 1,
+                "hurt": 1,
+                "joint": 1,
+                "knee": 1,
+                "arthriti": 1,
+                "muscl": 1,
+                "sprain": 1,
+                "ankl": 1,
+                "neck": 1,
+                "shoulder": 1,
+                "bodi": 1
+              },
+              "symptom.mental_health": {
+                "feel": 1,
+                "stress": 1,
+                "anxieti": 1,
+                "attack": 1,
+                "depress": 1,
+                "can": 1,
+                "not": 1,
+                "sleep": 1,
+                "insomnia": 1,
+                "mental": 1,
+                "health": 1,
+                "help": 1,
+                "panic": 1,
+                "worri": 1,
+                "veri": 1,
+                "sad": 1,
+                "late": 1,
+                "at": 1,
+                "work": 1
+              },
+              "symptom.eye": {
+                "eye": 1,
+                "problem": 1,
+                "blurri": 1,
+                "vision": 1,
+                "red": 1,
+                "irrit": 1,
+                "need": 1,
+                "glass": 1,
+                "get": 1,
+                "wors": 1,
+                "burn": 1,
+                "dri": 1
+              },
+              "booking": {
+                "book": 1,
+                "appoint": 1,
+                "how": 1,
+                "to": 1,
+                "schedul": 1,
+                "help": 1,
+                "me": 1,
+                "want": 1,
+                "doctor": 1,
+                "make": 1,
+                "an": 1
+              },
+              "find_doctor": {
+                "show": 1,
+                "doctor": 1,
+                "list": 1,
+                "avail": 1,
+                "find": 1,
+                "a": 1,
+                "specialist": 1,
+                "which": 1,
+                "are": 1,
+                "me": 1
+              },
+              "thanks": {
+                "thank": 1,
+                "you": 1,
+                "that": 1,
+                "was": 1,
+                "help": 1,
+                "a": 1,
+                "lot": 1,
+                "appreci": 1,
+                "your": 1
+              }
+            },
+            "featuresToIntent": {
+              "emerg": [
+                "emergency"
+              ],
+              "this": [
+                "emergency"
+              ],
+              "is": [
+                "emergency",
+                "symptom.fever_cold",
+                "symptom.child_health"
+              ],
+              "an": [
+                "emergency",
+                "booking"
+              ],
+              "chest": [
+                "emergency"
+              ],
+              "pain": [
+                "emergency",
+                "symptom.headache",
+                "symptom.stomach",
+                "symptom.womens_health",
+                "symptom.pain"
+              ],
+              "heart": [
+                "emergency"
+              ],
+              "attack": [
+                "emergency",
+                "symptom.mental_health"
+              ],
+              "have": [
+                "emergency",
+                "symptom.headache",
+                "symptom.fever_cold"
+              ],
+              "a": [
+                "emergency",
+                "symptom.headache",
+                "symptom.fever_cold",
+                "find_doctor",
+                "thanks"
+              ],
+              "stroke": [
+                "emergency"
+              ],
+              "symptom": [
+                "emergency",
+                "symptom.fever_cold",
+                "symptom.womens_health"
+              ],
+              "sever": [
+                "emergency",
+                "symptom.headache"
+              ],
+              "bleed": [
+                "emergency"
+              ],
+              "unconsci": [
+                "emergency"
+              ],
+              "not": [
+                "emergency",
+                "symptom.child_health",
+                "symptom.mental_health"
+              ],
+              "breath": [
+                "emergency"
+              ],
+              "difficulti": [
+                "emergency"
+              ],
+              "ca": [
+                "emergency"
+              ],
+              "can": [
+                "emergency",
+                "symptom.mental_health"
+              ],
+              "suicid": [
+                "emergency"
+              ],
+              "thought": [
+                "emergency"
+              ],
+              "want": [
+                "emergency",
+                "booking"
+              ],
+              "to": [
+                "emergency",
+                "booking"
+              ],
+              "hurt": [
+                "emergency",
+                "symptom.headache",
+                "symptom.pain"
+              ],
+              "myself": [
+                "emergency"
+              ],
+              "need": [
+                "emergency",
+                "symptom.womens_health",
+                "symptom.eye"
+              ],
+              "ambul": [
+                "emergency"
+              ],
+              "call": [
+                "emergency"
+              ],
+              "hello": [
+                "greeting"
+              ],
+              "hi": [
+                "greeting"
+              ],
+              "hey": [
+                "greeting"
+              ],
+              "hii": [
+                "greeting"
+              ],
+              "good": [
+                "greeting"
+              ],
+              "morn": [
+                "greeting"
+              ],
+              "even": [
+                "greeting"
+              ],
+              "afternoon": [
+                "greeting"
+              ],
+              "there": [
+                "greeting"
+              ],
+              "medi": [
+                "greeting"
+              ],
+              "connect": [
+                "greeting"
+              ],
+              "start": [
+                "greeting"
+              ],
+              "i": [
+                "symptom.headache",
+                "symptom.fever_cold"
+              ],
+              "headach": [
+                "symptom.headache"
+              ],
+              "bad": [
+                "symptom.headache",
+                "symptom.fever_cold"
+              ],
+              "migrain": [
+                "symptom.headache"
+              ],
+              "head": [
+                "symptom.headache"
+              ],
+              "my": [
+                "symptom.headache",
+                "symptom.child_health"
+              ],
+              "pound": [
+                "symptom.headache"
+              ],
+              "tension": [
+                "symptom.headache"
+              ],
+              "ach": [
+                "symptom.headache",
+                "symptom.fever_cold",
+                "symptom.stomach"
+              ],
+              "in": [
+                "symptom.headache"
+              ],
+              "fever": [
+                "symptom.fever_cold",
+                "symptom.child_health"
+              ],
+              "high": [
+                "symptom.fever_cold"
+              ],
+              "cold": [
+                "symptom.fever_cold"
+              ],
+              "and": [
+                "symptom.fever_cold",
+                "symptom.stomach"
+              ],
+              "cough": [
+                "symptom.fever_cold",
+                "symptom.child_health"
+              ],
+              "run": [
+                "symptom.fever_cold"
+              ],
+              "nose": [
+                "symptom.fever_cold"
+              ],
+              "sore": [
+                "symptom.fever_cold"
+              ],
+              "throat": [
+                "symptom.fever_cold"
+              ],
+              "flu": [
+                "symptom.fever_cold"
+              ],
+              "bodi": [
+                "symptom.fever_cold",
+                "symptom.pain"
+              ],
+              "chill": [
+                "symptom.fever_cold"
+              ],
+              "sneez": [
+                "symptom.fever_cold"
+              ],
+              "lot": [
+                "symptom.fever_cold",
+                "thanks"
+              ],
+              "viral": [
+                "symptom.fever_cold"
+              ],
+              "temperatur": [
+                "symptom.fever_cold"
+              ],
+              "skin": [
+                "symptom.skin"
+              ],
+              "problem": [
+                "symptom.skin",
+                "symptom.stomach",
+                "symptom.eye"
+              ],
+              "rash": [
+                "symptom.skin",
+                "symptom.child_health"
+              ],
+              "acn": [
+                "symptom.skin"
+              ],
+              "on": [
+                "symptom.skin"
+              ],
+              "face": [
+                "symptom.skin"
+              ],
+              "pimpl": [
+                "symptom.skin"
+              ],
+              "itch": [
+                "symptom.skin"
+              ],
+              "all": [
+                "symptom.skin"
+              ],
+              "over": [
+                "symptom.skin"
+              ],
+              "eczema": [
+                "symptom.skin"
+              ],
+              "flare": [
+                "symptom.skin"
+              ],
+              "up": [
+                "symptom.skin"
+              ],
+              "allergi": [
+                "symptom.skin"
+              ],
+              "hive": [
+                "symptom.skin"
+              ],
+              "fungal": [
+                "symptom.skin"
+              ],
+              "infect": [
+                "symptom.skin"
+              ],
+              "ringworm": [
+                "symptom.skin"
+              ],
+              "dandruff": [
+                "symptom.skin"
+              ],
+              "hair": [
+                "symptom.skin"
+              ],
+              "fall": [
+                "symptom.skin"
+              ],
+              "dri": [
+                "symptom.skin",
+                "symptom.eye"
+              ],
+              "itchi": [
+                "symptom.skin"
+              ],
+              "stomach": [
+                "symptom.stomach"
+              ],
+              "acid": [
+                "symptom.stomach"
+              ],
+              "gastric": [
+                "symptom.stomach"
+              ],
+              "issu": [
+                "symptom.stomach"
+              ],
+              "constip": [
+                "symptom.stomach"
+              ],
+              "diarrhea": [
+                "symptom.stomach"
+              ],
+              "loos": [
+                "symptom.stomach"
+              ],
+              "motion": [
+                "symptom.stomach"
+              ],
+              "nausea": [
+                "symptom.stomach"
+              ],
+              "vomit": [
+                "symptom.stomach",
+                "symptom.child_health"
+              ],
+              "indigest": [
+                "symptom.stomach"
+              ],
+              "bloat": [
+                "symptom.stomach"
+              ],
+              "gas": [
+                "symptom.stomach"
+              ],
+              "food": [
+                "symptom.stomach"
+              ],
+              "poison": [
+                "symptom.stomach"
+              ],
+              "upset": [
+                "symptom.stomach"
+              ],
+              "digest": [
+                "symptom.stomach"
+              ],
+              "pregnanc": [
+                "symptom.womens_health"
+              ],
+              "question": [
+                "symptom.womens_health"
+              ],
+              "irregular": [
+                "symptom.womens_health"
+              ],
+              "period": [
+                "symptom.womens_health"
+              ],
+              "cramp": [
+                "symptom.womens_health"
+              ],
+              "menstrual": [
+                "symptom.womens_health"
+              ],
+              "pcod": [
+                "symptom.womens_health"
+              ],
+              "pcos": [
+                "symptom.womens_health"
+              ],
+              "help": [
+                "symptom.womens_health",
+                "symptom.child_health",
+                "symptom.mental_health",
+                "booking",
+                "thanks"
+              ],
+              "gynecologist": [
+                "symptom.womens_health"
+              ],
+              "birth": [
+                "symptom.womens_health"
+              ],
+              "control": [
+                "symptom.womens_health"
+              ],
+              "advic": [
+                "symptom.womens_health"
+              ],
+              "miss": [
+                "symptom.womens_health"
+              ],
+              "child": [
+                "symptom.child_health"
+              ],
+              "sick": [
+                "symptom.child_health"
+              ],
+              "babi": [
+                "symptom.child_health"
+              ],
+              "has": [
+                "symptom.child_health"
+              ],
+              "kid": [
+                "symptom.child_health"
+              ],
+              "eat": [
+                "symptom.child_health"
+              ],
+              "toddler": [
+                "symptom.child_health"
+              ],
+              "infant": [
+                "symptom.child_health"
+              ],
+              "health": [
+                "symptom.child_health",
+                "symptom.mental_health"
+              ],
+              "vaccin": [
+                "symptom.child_health"
+              ],
+              "son": [
+                "symptom.child_health"
+              ],
+              "daughter": [
+                "symptom.child_health"
+              ],
+              "pediatr": [
+                "symptom.child_health"
+              ],
+              "back": [
+                "symptom.pain"
+              ],
+              "lower": [
+                "symptom.pain"
+              ],
+              "joint": [
+                "symptom.pain"
+              ],
+              "knee": [
+                "symptom.pain"
+              ],
+              "arthriti": [
+                "symptom.pain"
+              ],
+              "muscl": [
+                "symptom.pain"
+              ],
+              "sprain": [
+                "symptom.pain"
+              ],
+              "ankl": [
+                "symptom.pain"
+              ],
+              "neck": [
+                "symptom.pain"
+              ],
+              "shoulder": [
+                "symptom.pain"
+              ],
+              "feel": [
+                "symptom.mental_health"
+              ],
+              "stress": [
+                "symptom.mental_health"
+              ],
+              "anxieti": [
+                "symptom.mental_health"
+              ],
+              "depress": [
+                "symptom.mental_health"
+              ],
+              "sleep": [
+                "symptom.mental_health"
+              ],
+              "insomnia": [
+                "symptom.mental_health"
+              ],
+              "mental": [
+                "symptom.mental_health"
+              ],
+              "panic": [
+                "symptom.mental_health"
+              ],
+              "worri": [
+                "symptom.mental_health"
+              ],
+              "veri": [
+                "symptom.mental_health"
+              ],
+              "sad": [
+                "symptom.mental_health"
+              ],
+              "late": [
+                "symptom.mental_health"
+              ],
+              "at": [
+                "symptom.mental_health"
+              ],
+              "work": [
+                "symptom.mental_health"
+              ],
+              "eye": [
+                "symptom.eye"
+              ],
+              "blurri": [
+                "symptom.eye"
+              ],
+              "vision": [
+                "symptom.eye"
+              ],
+              "red": [
+                "symptom.eye"
+              ],
+              "irrit": [
+                "symptom.eye"
+              ],
+              "glass": [
+                "symptom.eye"
+              ],
+              "get": [
+                "symptom.eye"
+              ],
+              "wors": [
+                "symptom.eye"
+              ],
+              "burn": [
+                "symptom.eye"
+              ],
+              "book": [
+                "booking"
+              ],
+              "appoint": [
+                "booking"
+              ],
+              "how": [
+                "booking"
+              ],
+              "schedul": [
+                "booking"
+              ],
+              "me": [
+                "booking",
+                "find_doctor"
+              ],
+              "doctor": [
+                "booking",
+                "find_doctor"
+              ],
+              "make": [
+                "booking"
+              ],
+              "show": [
+                "find_doctor"
+              ],
+              "list": [
+                "find_doctor"
+              ],
+              "avail": [
+                "find_doctor"
+              ],
+              "find": [
+                "find_doctor"
+              ],
+              "specialist": [
+                "find_doctor"
+              ],
+              "which": [
+                "find_doctor"
+              ],
+              "are": [
+                "find_doctor"
+              ],
+              "thank": [
+                "thanks"
+              ],
+              "you": [
+                "thanks"
+              ],
+              "that": [
+                "thanks"
+              ],
+              "was": [
+                "thanks"
+              ],
+              "appreci": [
+                "thanks"
+              ],
+              "your": [
+                "thanks"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true
+              },
+              "features": [
+                "emerg",
+                "this",
+                "is",
+                "an",
+                "chest",
+                "pain",
+                "heart",
+                "attack",
+                "have",
+                "a",
+                "stroke",
+                "symptom",
+                "sever",
+                "bleed",
+                "unconsci",
+                "not",
+                "breath",
+                "difficulti",
+                "ca",
+                "can",
+                "suicid",
+                "thought",
+                "want",
+                "to",
+                "hurt",
+                "myself",
+                "need",
+                "ambul",
+                "call",
+                "hello",
+                "hi",
+                "hey",
+                "hii",
+                "good",
+                "morn",
+                "even",
+                "afternoon",
+                "there",
+                "medi",
+                "connect",
+                "start",
+                "i",
+                "headach",
+                "bad",
+                "migrain",
+                "head",
+                "my",
+                "pound",
+                "tension",
+                "ach",
+                "in",
+                "fever",
+                "high",
+                "cold",
+                "and",
+                "cough",
+                "run",
+                "nose",
+                "sore",
+                "throat",
+                "flu",
+                "bodi",
+                "chill",
+                "sneez",
+                "lot",
+                "viral",
+                "temperatur",
+                "skin",
+                "problem",
+                "rash",
+                "acn",
+                "on",
+                "face",
+                "pimpl",
+                "itch",
+                "all",
+                "over",
+                "eczema",
+                "flare",
+                "up",
+                "allergi",
+                "hive",
+                "fungal",
+                "infect",
+                "ringworm",
+                "dandruff",
+                "hair",
+                "fall",
+                "dri",
+                "itchi",
+                "stomach",
+                "acid",
+                "gastric",
+                "issu",
+                "constip",
+                "diarrhea",
+                "loos",
+                "motion",
+                "nausea",
+                "vomit",
+                "indigest",
+                "bloat",
+                "gas",
+                "food",
+                "poison",
+                "upset",
+                "digest",
+                "pregnanc",
+                "question",
+                "irregular",
+                "period",
+                "cramp",
+                "menstrual",
+                "pcod",
+                "pcos",
+                "help",
+                "gynecologist",
+                "birth",
+                "control",
+                "advic",
+                "miss",
+                "child",
+                "sick",
+                "babi",
+                "has",
+                "kid",
+                "eat",
+                "toddler",
+                "infant",
+                "health",
+                "vaccin",
+                "son",
+                "daughter",
+                "pediatr",
+                "back",
+                "lower",
+                "joint",
+                "knee",
+                "arthriti",
+                "muscl",
+                "sprain",
+                "ankl",
+                "neck",
+                "shoulder",
+                "feel",
+                "stress",
+                "anxieti",
+                "depress",
+                "sleep",
+                "insomnia",
+                "mental",
+                "panic",
+                "worri",
+                "veri",
+                "sad",
+                "late",
+                "at",
+                "work",
+                "eye",
+                "blurri",
+                "vision",
+                "red",
+                "irrit",
+                "glass",
+                "get",
+                "wors",
+                "burn",
+                "book",
+                "appoint",
+                "how",
+                "schedul",
+                "me",
+                "doctor",
+                "make",
+                "show",
+                "list",
+                "avail",
+                "find",
+                "specialist",
+                "which",
+                "are",
+                "thank",
+                "you",
+                "that",
+                "was",
+                "appreci",
+                "your"
+              ],
+              "intents": [
+                "emergency",
+                "greeting",
+                "symptom.headache",
+                "symptom.fever_cold",
+                "symptom.skin",
+                "symptom.stomach",
+                "symptom.womens_health",
+                "symptom.child_health",
+                "symptom.pain",
+                "symptom.mental_health",
+                "symptom.eye",
+                "booking",
+                "find_doctor",
+                "thanks"
+              ],
+              "perceptrons": [
+                [
+                  12.739728927612305,
+                  1.1187032461166382,
+                  -0.5607954263687134,
+                  0.14565545320510864,
+                  12.919286727905273,
+                  0.18847642838954926,
+                  10.13394832611084,
+                  2.7634940147399902,
+                  0.7574196457862854,
+                  -0.23382924497127533,
+                  10.337357521057129,
+                  2.8006515502929688,
+                  4.416590690612793,
+                  8.77273178100586,
+                  12.939204216003418,
+                  2.567033290863037,
+                  10.531380653381348,
+                  2.852648973464966,
+                  0.349164754152298,
+                  -0.0832703486084938,
+                  6.622625827789307,
+                  6.622625827789307,
+                  2.683915853500366,
+                  2.2241103649139404,
+                  2.937041997909546,
+                  5.37911319732666,
+                  2.050636053085327,
+                  10.657951354980469,
+                  2.886709690093994,
+                  -2.2178430557250977,
+                  -2.23516583442688,
+                  -2.190166473388672,
+                  -1.7820359468460083,
+                  -2.507524251937866,
+                  -0.8291671872138977,
+                  -0.7428827881813049,
+                  -0.6590098738670349,
+                  -1.396073341369629,
+                  -0.6591076254844666,
+                  -0.6591076254844666,
+                  -1.6426212787628174,
+                  -1.6355265378952026,
+                  -2.703702688217163,
+                  -0.9297962784767151,
+                  -5.377803325653076,
+                  -2.597181558609009,
+                  -1.544909119606018,
+                  -0.25424444675445557,
+                  -0.21748265624046326,
+                  -0.734049379825592,
+                  -0.318796306848526,
+                  -1.6870492696762085,
+                  -1.728774070739746,
+                  -0.6790504455566406,
+                  -1.1572964191436768,
+                  -0.9503003358840942,
+                  -0.9464467167854309,
+                  -0.9464467167854309,
+                  -0.9237629771232605,
+                  -0.9237629771232605,
+                  -3.7993476390838623,
+                  -1.1480647325515747,
+                  -0.2443608045578003,
+                  -1.1489524841308594,
+                  -1.1509121656417847,
+                  -0.31357207894325256,
+                  -1.2521971464157104,
+                  -1.4280542135238647,
+                  -1.0472875833511353,
+                  -0.43040040135383606,
+                  -0.565767228603363,
+                  -0.7099484205245972,
+                  -0.565767228603363,
+                  -1.1944063901901245,
+                  -0.5858869552612305,
+                  -0.5858869552612305,
+                  -0.5858869552612305,
+                  -0.5755040049552917,
+                  -0.5755040049552917,
+                  -0.5755040049552917,
+                  -0.3186902701854706,
+                  -0.12433409690856934,
+                  -0.7422040700912476,
+                  -0.7422040700912476,
+                  -1.1444088220596313,
+                  -1.1283714771270752,
+                  -0.7016263604164124,
+                  -0.7016263604164124,
+                  -0.21098214387893677,
+                  -0.1343393623828888,
+                  -1.5269702672958374,
+                  -0.4162807762622833,
+                  -0.6698748469352722,
+                  -0.6698748469352722,
+                  -1.0857807397842407,
+                  -1.0758966207504272,
+                  -0.6332244873046875,
+                  -0.6332244873046875,
+                  -0.0697348415851593,
+                  -0.56052565574646,
+                  -1.062921166419983,
+                  -0.09416261315345764,
+                  -0.09416261315345764,
+                  -0.6071383953094482,
+                  -0.6071383953094482,
+                  -0.15742191672325134,
+                  -0.2509894371032715,
+                  -0.6017952561378479,
+                  -0.6017952561378479,
+                  -0.3772142231464386,
+                  -0.9114193916320801,
+                  -0.35542333126068115,
+                  -1.3620141744613647,
+                  -3.742995500564575,
+                  -0.43265649676322937,
+                  -0.848814070224762,
+                  -2.9386656284332275,
+                  -0.3616674542427063,
+                  -0.3616674542427063,
+                  -0.3616674542427063,
+                  -0.16316239535808563,
+                  -0.716508686542511,
+                  -0.3660794496536255,
+                  0,
+                  0,
+                  -1.801868200302124,
+                  -1.801868200302124,
+                  -0.4861496090888977,
+                  -0.5222141146659851,
+                  -0.5222141146659851,
+                  -0.32696714997291565,
+                  0,
+                  0,
+                  -0.30113667249679565,
+                  -2.262019395828247,
+                  -1.6847918033599854,
+                  -1.2155547142028809,
+                  -1.2164448499679565,
+                  -1.2097049951553345,
+                  -1.1978344917297363,
+                  -0.5104478597640991,
+                  -0.5104478597640991,
+                  -1.1800020933151245,
+                  -1.1612330675125122,
+                  -0.6414577960968018,
+                  -0.5348256230354309,
+                  -3.711729049682617,
+                  -0.9272119402885437,
+                  -3.309835910797119,
+                  -0.9013089537620544,
+                  0,
+                  -3.6492018699645996,
+                  -0.3289903402328491,
+                  -0.3267185091972351,
+                  -0.3267185091972351,
+                  -0.3267185091972351,
+                  -0.22235824167728424,
+                  -0.22235824167728424,
+                  -0.7520797252655029,
+                  -0.38800132274627686,
+                  -0.5830771327018738,
+                  -0.2387058287858963,
+                  -0.23481613397598267,
+                  -2.7798333168029785,
+                  -0.19359108805656433,
+                  -0.19359108805656433,
+                  -0.20837874710559845,
+                  -3.1562767028808594,
+                  -0.9722926616668701,
+                  -0.4480857253074646,
+                  -0.00016784238687250763,
+                  -0.16420462727546692,
+                  -2.6964714527130127,
+                  -0.9582744836807251,
+                  -0.16420462727546692,
+                  0,
+                  0,
+                  -0.4623784124851227,
+                  -0.6309317350387573,
+                  0,
+                  0,
+                  -0.8505411744117737,
+                  -0.24482960999011993,
+                  -0.054369840770959854,
+                  -0.054369840770959854,
+                  -0.052891723811626434,
+                  -0.052891723811626434,
+                  0.964366564048705
+                ],
+                [
+                  -1.535709023475647,
+                  0,
+                  -0.570755124092102,
+                  -0.29883959889411926,
+                  -0.005580112338066101,
+                  -1.6704984903335571,
+                  -0.36024168133735657,
+                  -1.2939351797103882,
+                  -0.8954565525054932,
+                  -1.2160426378250122,
+                  -0.18081563711166382,
+                  -1.4714375734329224,
+                  -1.259151816368103,
+                  -0.3901177942752838,
+                  -1.5108131170272827,
+                  -0.884243905544281,
+                  -0.8405238389968872,
+                  -0.7945163249969482,
+                  -0.0034495776053518057,
+                  -0.41549360752105713,
+                  -0.8159041404724121,
+                  -0.8159041404724121,
+                  -0.09206569939851761,
+                  -0.5386264324188232,
+                  -0.9773658514022827,
+                  -0.054262708872556686,
+                  -1.1726062297821045,
+                  -0.8224734663963318,
+                  -0.8049156665802002,
+                  11.928448677062988,
+                  11.881128311157227,
+                  11.831938743591309,
+                  12.263368606567383,
+                  9.386319160461426,
+                  3.1418046951293945,
+                  3.1296188831329346,
+                  3.1155033111572266,
+                  0.8853226900100708,
+                  0.4827979505062103,
+                  0.4827979505062103,
+                  12.251112937927246,
+                  -0.8954565525054932,
+                  -2.809356689453125,
+                  -1.1480433940887451,
+                  -2.0761563777923584,
+                  -1.952523946762085,
+                  -0.9074551463127136,
+                  -0.397718608379364,
+                  -0.3452833592891693,
+                  -1.1043850183486938,
+                  -0.1794053316116333,
+                  -1.8026760816574097,
+                  -1.2038531303405762,
+                  -0.7963110208511353,
+                  -1.420705795288086,
+                  -1.1111018657684326,
+                  -1.0625393390655518,
+                  -1.0625393390655518,
+                  -1.0380182266235352,
+                  -1.0380182266235352,
+                  -0.9282971620559692,
+                  -0.2972191274166107,
+                  -0.2972191274166107,
+                  -0.6132723093032837,
+                  -0.6132723093032837,
+                  -0.449291467666626,
+                  -0.5594293475151062,
+                  -1.734182357788086,
+                  -1.3528305292129517,
+                  -0.6382836103439331,
+                  -0.6747133135795593,
+                  -0.8620282411575317,
+                  -0.6747133135795593,
+                  -1.7199698686599731,
+                  -0.6913807988166809,
+                  -0.6913807988166809,
+                  -0.6913807988166809,
+                  -0.7023593187332153,
+                  -0.7023593187332153,
+                  -0.7023593187332153,
+                  -0.3787909746170044,
+                  -0.1424490064382553,
+                  -0.9142306447029114,
+                  -0.9142306447029114,
+                  -1.709479570388794,
+                  -1.7028683423995972,
+                  -0.8728734254837036,
+                  -0.8728734254837036,
+                  -0.36833515763282776,
+                  -0.15095889568328857,
+                  -1.1043288707733154,
+                  -0.5208059549331665,
+                  -0.8685610890388489,
+                  -0.8685610890388489,
+                  -1.690718650817871,
+                  -1.6829278469085693,
+                  -0.8644267916679382,
+                  -0.8644267916679382,
+                  -0.08337180316448212,
+                  -0.9061631560325623,
+                  -1.6724594831466675,
+                  -0.1541263610124588,
+                  -0.1541263610124588,
+                  -0.8616505265235901,
+                  -0.8616505265235901,
+                  -0.6182200908660889,
+                  -0.3689976930618286,
+                  -0.8604968786239624,
+                  -0.8604968786239624,
+                  -0.4409436583518982,
+                  -1.298608422279358,
+                  -0.4307209849357605,
+                  -0.15989470481872559,
+                  -0.33317551016807556,
+                  -0.5169755220413208,
+                  -1.3571276664733887,
+                  -0.6338145136833191,
+                  -0.5752518773078918,
+                  -0.5752518773078918,
+                  -0.5752518773078918,
+                  -0.4222983419895172,
+                  -0.8633372783660889,
+                  -0.005098955240100622,
+                  0,
+                  -0.08953636884689331,
+                  -0.42237794399261475,
+                  -0.42237794399261475,
+                  -0.8122905492782593,
+                  -0.8241469264030457,
+                  -0.8933385014533997,
+                  -0.853139340877533,
+                  -0.08953636884689331,
+                  0,
+                  -0.41884610056877136,
+                  -0.3750404715538025,
+                  -0.3750404715538025,
+                  -0.0619698092341423,
+                  -0.06058460474014282,
+                  -0.05947006866335869,
+                  -0.058413490653038025,
+                  -0.8572155237197876,
+                  -0.8572155237197876,
+                  -0.05446525663137436,
+                  -0.053049780428409576,
+                  -1.0476038455963135,
+                  -0.8339177966117859,
+                  -0.4966040551662445,
+                  -1.6261628866195679,
+                  -0.4153071343898773,
+                  -1.6132218837738037,
+                  -0.062079232186079025,
+                  -0.4356105625629425,
+                  -0.6496384739875793,
+                  -0.568838894367218,
+                  -0.568838894367218,
+                  -0.568838894367218,
+                  -0.43595269322395325,
+                  -0.43595269322395325,
+                  -1.3341282606124878,
+                  -0.6754365563392639,
+                  -1.021190881729126,
+                  -0.38077208399772644,
+                  -0.37696149945259094,
+                  -0.5189643502235413,
+                  -0.3441694378852844,
+                  -0.3441694378852844,
+                  -0.3685230314731598,
+                  -0.7216834425926208,
+                  -1.109636664390564,
+                  -0.445256769657135,
+                  -0.5800721645355225,
+                  -0.5111839175224304,
+                  -1.2048468589782715,
+                  -0.29883959889411926,
+                  -0.6815866231918335,
+                  -0.5018017292022705,
+                  -0.48551562428474426,
+                  -0.00011228590301470831,
+                  -0.5037639141082764,
+                  -0.08073194324970245,
+                  -0.08073194324970245,
+                  -1.5834734439849854,
+                  -0.42130979895591736,
+                  -0.1686287224292755,
+                  -0.1686287224292755,
+                  -0.16729846596717834,
+                  -0.16729846596717834,
+                  1.7016433094932628
+                ],
+                [
+                  -0.26285630464553833,
+                  0,
+                  -1.0580183267593384,
+                  -0.05520281195640564,
+                  -0.7071683406829834,
+                  0.5162131786346436,
+                  -0.5331678986549377,
+                  -0.5855043530464172,
+                  0.1558019071817398,
+                  0.061837781220674515,
+                  0,
+                  -0.7644102573394775,
+                  1.028193473815918,
+                  -2.126528739929199,
+                  -0.2491610050201416,
+                  -0.26115497946739197,
+                  -0.13206352293491364,
+                  -0.13206352293491364,
+                  0,
+                  -0.053211964666843414,
+                  -0.13195715844631195,
+                  -0.13195715844631195,
+                  -0.4571584165096283,
+                  -0.45948052406311035,
+                  0.6998582482337952,
+                  -0.4571584165096283,
+                  -0.31008946895599365,
+                  -0.13183967769145966,
+                  -0.13183967769145966,
+                  -0.24657614529132843,
+                  -0.24499990046024323,
+                  -0.24308834969997406,
+                  -0.23860962688922882,
+                  -0.19562192261219025,
+                  -0.06613001227378845,
+                  -0.065069779753685,
+                  -0.06396569311618805,
+                  -0.0763556957244873,
+                  -0.04008902236819267,
+                  -0.04008902236819267,
+                  -0.23475708067417145,
+                  0.6999516487121582,
+                  13.171711921691895,
+                  1.0140796899795532,
+                  13.323290824890137,
+                  12.865660667419434,
+                  0.42148151993751526,
+                  0.9691996574401855,
+                  0.975730836391449,
+                  1.3361124992370605,
+                  0.2690771818161011,
+                  -2.190307855606079,
+                  -0.8206661939620972,
+                  -0.6792985200881958,
+                  -1.366558313369751,
+                  -1.9475167989730835,
+                  -0.6551259160041809,
+                  -0.6551259160041809,
+                  -0.632301390171051,
+                  -0.632301390171051,
+                  -0.584877610206604,
+                  -0.7471453547477722,
+                  -0.5060837864875793,
+                  -0.7504794597625732,
+                  -0.8322882056236267,
+                  -0.1842218041419983,
+                  -0.3265784680843353,
+                  -1.2878085374832153,
+                  -0.7680705189704895,
+                  -0.9736204147338867,
+                  -0.4158337116241455,
+                  -0.599763035774231,
+                  -0.4158337116241455,
+                  -0.6735799908638,
+                  -0.4138805568218231,
+                  -0.4138805568218231,
+                  -0.4138805568218231,
+                  -0.4007233679294586,
+                  -0.4007233679294586,
+                  -0.4007233679294586,
+                  -0.21626923978328705,
+                  -0.11898740381002426,
+                  -0.46272116899490356,
+                  -0.46272116899490356,
+                  -0.61032634973526,
+                  -0.5914664268493652,
+                  -0.4431106150150299,
+                  -0.4431106150150299,
+                  -0.1376763880252838,
+                  -0.1131616085767746,
+                  -1.9566453695297241,
+                  -0.22699254751205444,
+                  -0.3837377429008484,
+                  -0.3837377429008484,
+                  -0.4913801848888397,
+                  -0.4877418875694275,
+                  -0.346932977437973,
+                  -0.346932977437973,
+                  -0.022508306428790092,
+                  -0.2811601459980011,
+                  -0.461872935295105,
+                  -0.01315237581729889,
+                  -0.01315237581729889,
+                  -0.3233698010444641,
+                  -0.3233698010444641,
+                  -0.08848138153553009,
+                  -0.12711971998214722,
+                  -0.3239920139312744,
+                  -0.3239920139312744,
+                  -0.21304303407669067,
+                  -0.5780066847801208,
+                  -0.1922401338815689,
+                  -0.8141084909439087,
+                  -0.09770971536636353,
+                  -0.2500191032886505,
+                  -0.4019595980644226,
+                  -0.2720724940299988,
+                  -0.2166370004415512,
+                  -0.2166370004415512,
+                  -0.2166370004415512,
+                  -0.12178109586238861,
+                  -0.7468493580818176,
+                  -0.6470755338668823,
+                  0,
+                  -0.8880499601364136,
+                  -0.19791418313980103,
+                  -0.19791418313980103,
+                  -0.2362314760684967,
+                  -0.2463253289461136,
+                  -0.2463253289461136,
+                  -0.0777592882514,
+                  -0.6219857931137085,
+                  -0.22035536170005798,
+                  -0.13777899742126465,
+                  -1.078441858291626,
+                  -0.5657574534416199,
+                  -0.7863725423812866,
+                  -0.7824764251708984,
+                  -0.7753068208694458,
+                  -0.7660365700721741,
+                  -0.17706313729286194,
+                  -0.17706313729286194,
+                  -0.7548714280128479,
+                  -0.7427766919136047,
+                  -0.21569940447807312,
+                  -0.18726512789726257,
+                  -0.029659949243068695,
+                  -0.26975196599960327,
+                  -0.053211964666843414,
+                  -0.2687724828720093,
+                  0,
+                  -0.01516636647284031,
+                  -0.1088104173541069,
+                  -0.11362586915493011,
+                  -0.11362586915493011,
+                  -0.11362586915493011,
+                  -0.0798005685210228,
+                  -0.0798005685210228,
+                  -0.2512954771518707,
+                  -0.11631011962890625,
+                  -0.19616685807704926,
+                  -0.08757749944925308,
+                  -0.0806395411491394,
+                  -0.019440237432718277,
+                  -0.07415029406547546,
+                  -0.07415029406547546,
+                  -0.07224354892969131,
+                  -0.09014848619699478,
+                  -0.2322096973657608,
+                  -0.0013320253929123282,
+                  -0.08212083578109741,
+                  0,
+                  -0.2423233538866043,
+                  -0.05520281195640564,
+                  -0.07612142711877823,
+                  -0.08604244142770767,
+                  -0.07644471526145935,
+                  -0.34801536798477173,
+                  -0.34801536798477173,
+                  -0.01730339601635933,
+                  -0.01730339601635933,
+                  -0.26947879791259766,
+                  -0.08636897802352905,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.2725529340585997
+                ],
+                [
+                  -1.1133688688278198,
+                  -1.0863161087036133,
+                  3.0840182304382324,
+                  -1.1308224201202393,
+                  0,
+                  -3.3693008422851562,
+                  -1.046142339706421,
+                  -1.2359864711761475,
+                  2.1344316005706787,
+                  -0.1370028853416443,
+                  -3.520994186401367,
+                  3.3518619537353516,
+                  -0.1949012279510498,
+                  -0.18513479828834534,
+                  -0.31445980072021484,
+                  -0.41982147097587585,
+                  -0.1862163543701172,
+                  -0.1862163543701172,
+                  0,
+                  -0.15324507653713226,
+                  -0.18390463292598724,
+                  -0.18390463292598724,
+                  -0.021510230377316475,
+                  -0.1812000572681427,
+                  -0.26720955967903137,
+                  0,
+                  -0.5624757409095764,
+                  -0.183184415102005,
+                  -0.183184415102005,
+                  -0.3143113851547241,
+                  -0.3126913011074066,
+                  -0.31024500727653503,
+                  -0.30026185512542725,
+                  -0.2705003619194031,
+                  -0.09530264139175415,
+                  -0.08909577876329422,
+                  -0.08342507481575012,
+                  -0.12969589233398438,
+                  -0.06631410121917725,
+                  -0.06631410121917725,
+                  -0.2961543798446655,
+                  3.1789045333862305,
+                  -5.367159366607666,
+                  5.193864822387695,
+                  -0.2670539319515228,
+                  -2.0491597652435303,
+                  -2.109356641769409,
+                  0,
+                  0,
+                  1.8556774854660034,
+                  0,
+                  8.492549896240234,
+                  5.92526388168335,
+                  2.1707382202148438,
+                  3.3470547199249268,
+                  8.600478172302246,
+                  7.013382911682129,
+                  7.013382911682129,
+                  7.013401508331299,
+                  7.013401508331299,
+                  10.492657661437988,
+                  3.117389678955078,
+                  5.62025785446167,
+                  9.314091682434082,
+                  4.6577839851379395,
+                  5.317404270172119,
+                  4.786679744720459,
+                  -2.294888496398926,
+                  -1.3525538444519043,
+                  -0.5857282280921936,
+                  -0.7454840540885925,
+                  -1.0739983320236206,
+                  -0.7454840540885925,
+                  -1.2982754707336426,
+                  -0.7424151301383972,
+                  -0.7424151301383972,
+                  -0.7424151301383972,
+                  -0.78473961353302,
+                  -0.78473961353302,
+                  -0.78473961353302,
+                  -0.38456985354423523,
+                  -0.21384365856647491,
+                  -0.9015714526176453,
+                  -0.9015714526176453,
+                  -1.1888947486877441,
+                  -1.1542762517929077,
+                  -0.816020131111145,
+                  -0.816020131111145,
+                  -0.23318330943584442,
+                  -0.16024667024612427,
+                  -2.4023656845092773,
+                  -0.479545533657074,
+                  -0.7627978920936584,
+                  -0.7627978920936584,
+                  -1.0208693742752075,
+                  -0.992584764957428,
+                  -0.6952111721038818,
+                  -0.6952111721038818,
+                  -2.1897470951080322,
+                  -2.2665505409240723,
+                  -0.9034204483032227,
+                  -2.188791513442993,
+                  -2.188791513442993,
+                  -0.5752059817314148,
+                  -0.5752059817314148,
+                  -0.16182354092597961,
+                  -0.1653928905725479,
+                  -0.5554206371307373,
+                  -0.5554206371307373,
+                  -0.35626092553138733,
+                  -0.9359109401702881,
+                  -0.33459287881851196,
+                  -0.2262750267982483,
+                  -3.62007212638855,
+                  -0.406211256980896,
+                  -0.6524593830108643,
+                  -0.4463759958744049,
+                  -0.359588623046875,
+                  -0.359588623046875,
+                  -0.359588623046875,
+                  -0.20054854452610016,
+                  -0.7832894921302795,
+                  -0.6060658097267151,
+                  -3.8211939334869385,
+                  -5.318711280822754,
+                  -0.2553529143333435,
+                  -0.2553529143333435,
+                  -0.052658744156360626,
+                  -0.3839387595653534,
+                  -0.4146806299686432,
+                  -0.1632394790649414,
+                  -0.015908345580101013,
+                  -1.4578561782836914,
+                  -0.18616659939289093,
+                  -0.3019201159477234,
+                  -0.26720955967903137,
+                  -0.012293776497244835,
+                  -0.009643963538110256,
+                  -0.0077676852233707905,
+                  -0.006380032282322645,
+                  -0.37165597081184387,
+                  -0.37165597081184387,
+                  -0.004288016818463802,
+                  -0.0035289027728140354,
+                  -0.4293456971645355,
+                  -0.36829954385757446,
+                  -0.09417358040809631,
+                  -0.5119190216064453,
+                  -0.15324507653713226,
+                  -0.4991455674171448,
+                  -0.02133524976670742,
+                  -0.06700843572616577,
+                  -0.22393251955509186,
+                  -0.22915881872177124,
+                  -0.22915881872177124,
+                  -0.22915881872177124,
+                  -0.16283012926578522,
+                  -0.16283012926578522,
+                  -0.5119107961654663,
+                  -0.24125951528549194,
+                  -0.3971443772315979,
+                  -0.17669619619846344,
+                  -0.16324789822101593,
+                  -0.1033908948302269,
+                  -0.1477545201778412,
+                  -0.1477545201778412,
+                  -0.1464727818965912,
+                  -0.3268730938434601,
+                  -0.39571037888526917,
+                  -0.1545412838459015,
+                  -0.21111725270748138,
+                  -0.019446996971964836,
+                  -0.4960077702999115,
+                  -0.037740740925073624,
+                  -0.15833927690982819,
+                  -0.17207908630371094,
+                  -0.14942793548107147,
+                  -0.5629810690879822,
+                  -0.5808629393577576,
+                  -0.03296444192528725,
+                  -0.03296444192528725,
+                  -4.713141441345215,
+                  -0.02181723527610302,
+                  -0.002938939491286874,
+                  -0.002938939491286874,
+                  0,
+                  0,
+                  0.30032746807848554
+                ],
+                [
+                  -1.5601168870925903,
+                  -0.08321993798017502,
+                  -0.7696099281311035,
+                  -0.3705483376979828,
+                  0,
+                  -1.9503036737442017,
+                  -0.25399187207221985,
+                  -1.3868736028671265,
+                  -0.20475800335407257,
+                  -0.8395902514457703,
+                  -0.32265111804008484,
+                  -1.4167721271514893,
+                  -0.8760002851486206,
+                  -0.7477684020996094,
+                  -1.5456217527389526,
+                  -1.058480978012085,
+                  -0.815565288066864,
+                  -0.7897567749023438,
+                  -0.0008550364873372018,
+                  -0.40997618436813354,
+                  -0.8019803762435913,
+                  -0.8019803762435913,
+                  -0.1847807765007019,
+                  -0.5828113555908203,
+                  -0.7316344380378723,
+                  -0.11810080707073212,
+                  -1.2976890802383423,
+                  -0.8033643364906311,
+                  -0.7984422445297241,
+                  -1.536465048789978,
+                  -1.5294593572616577,
+                  -1.5208492279052734,
+                  -1.501205325126648,
+                  -1.1839697360992432,
+                  -0.4010750949382782,
+                  -0.3933814764022827,
+                  -0.389198899269104,
+                  -0.4756299555301666,
+                  -0.24784567952156067,
+                  -0.24784567952156067,
+                  -1.4846081733703613,
+                  -0.19594192504882812,
+                  -1.5077687501907349,
+                  -0.7894032597541809,
+                  -1.4702807664871216,
+                  -0.2932986617088318,
+                  -1.5508062839508057,
+                  -0.2418583482503891,
+                  -0.22583135962486267,
+                  -1.2596222162246704,
+                  0,
+                  -1.1964393854141235,
+                  -0.4806953966617584,
+                  0,
+                  -1.420173168182373,
+                  -0.7566030621528625,
+                  -0.7756702303886414,
+                  -0.7756702303886414,
+                  -0.7748906016349792,
+                  -0.7748906016349792,
+                  -0.1319461613893509,
+                  -0.03481539711356163,
+                  0,
+                  -0.29195499420166016,
+                  -0.42464905977249146,
+                  -0.34786146879196167,
+                  -0.3029988706111908,
+                  11.13359260559082,
+                  1.0189017057418823,
+                  1.7318971157073975,
+                  4.7428693771362305,
+                  3.191455364227295,
+                  4.7428693771362305,
+                  12.459900856018066,
+                  4.232605457305908,
+                  4.232605457305908,
+                  4.232605457305908,
+                  4.232629776000977,
+                  4.232629776000977,
+                  4.232629776000977,
+                  1.694907307624817,
+                  -1.5504448413848877,
+                  6.357052326202393,
+                  6.357052326202393,
+                  12.399791717529297,
+                  12.341938018798828,
+                  6.330273151397705,
+                  6.330273151397705,
+                  0.39728063344955444,
+                  1.1732679605484009,
+                  -2.2488834857940674,
+                  -2.5054619312286377,
+                  -1.262399673461914,
+                  -1.262399673461914,
+                  -1.8158382177352905,
+                  -1.7872735261917114,
+                  -1.1517722606658936,
+                  -1.1517722606658936,
+                  -0.6477754712104797,
+                  -1.3710908889770508,
+                  -1.7426058053970337,
+                  -0.659071683883667,
+                  -0.659071683883667,
+                  -1.0904569625854492,
+                  -1.0904569625854492,
+                  -0.43287113308906555,
+                  -2.4840006828308105,
+                  -1.0448846817016602,
+                  -1.0448846817016602,
+                  -0.6572389006614685,
+                  -1.7626992464065552,
+                  -0.5951242446899414,
+                  -0.46899649500846863,
+                  -0.936499297618866,
+                  -0.7506253123283386,
+                  -1.5579063892364502,
+                  -0.8542688488960266,
+                  -0.7146714925765991,
+                  -0.7146714925765991,
+                  -0.7146714925765991,
+                  -0.4310057759284973,
+                  -1.1366074085235596,
+                  -0.3327060341835022,
+                  -0.4467216432094574,
+                  -1.6725083589553833,
+                  -0.5833905935287476,
+                  -0.5833905935287476,
+                  -0.6265666484832764,
+                  -0.8892715573310852,
+                  -0.9948157072067261,
+                  -0.7586179375648499,
+                  -1.035072922706604,
+                  -0.09375852346420288,
+                  -0.5050949454307556,
+                  -0.7091886401176453,
+                  -0.5926138162612915,
+                  -0.11703115701675415,
+                  -0.09918329864740372,
+                  -0.08854655176401138,
+                  -0.07837456464767456,
+                  -0.9074390530586243,
+                  -0.9074390530586243,
+                  -0.045174822211265564,
+                  -0.03940865397453308,
+                  -1.1443172693252563,
+                  -0.9643256664276123,
+                  -0.6159046292304993,
+                  -1.605135440826416,
+                  -0.40997618436813354,
+                  -1.597914457321167,
+                  -0.08336418122053146,
+                  -0.4963536560535431,
+                  -0.6013544201850891,
+                  -0.6029658317565918,
+                  -0.6029658317565918,
+                  -0.6029658317565918,
+                  -0.4206070303916931,
+                  -0.4206070303916931,
+                  -2.478557825088501,
+                  -0.6569939255714417,
+                  -1.0555258989334106,
+                  -0.24301837384700775,
+                  -0.22317351400852203,
+                  -0.41737493872642517,
+                  -0.3911612033843994,
+                  -0.3911612033843994,
+                  -0.1776190847158432,
+                  -0.7909729480743408,
+                  -1.1469508409500122,
+                  -0.3911074101924896,
+                  -0.5411397814750671,
+                  -0.36377719044685364,
+                  -1.2610102891921997,
+                  -0.28006821870803833,
+                  -0.6219208240509033,
+                  -0.48468518257141113,
+                  -0.4367383122444153,
+                  -0.372422456741333,
+                  -0.732414722442627,
+                  -0.10795051604509354,
+                  -0.10795051604509354,
+                  -1.5887216329574585,
+                  -0.4722159206867218,
+                  -0.07197800278663635,
+                  -0.07197800278663635,
+                  -0.0681290477514267,
+                  -0.0681290477514267,
+                  1.5876966220897226
+                ],
+                [
+                  -1.5647790431976318,
+                  -0.0746738463640213,
+                  -0.9854525923728943,
+                  -0.410673052072525,
+                  -0.8794853091239929,
+                  -0.5571972131729126,
+                  -0.19404536485671997,
+                  -1.601426362991333,
+                  -0.04364192858338356,
+                  -0.9047626852989197,
+                  -0.19436487555503845,
+                  -1.5719292163848877,
+                  -0.9209473133087158,
+                  -0.7673320174217224,
+                  -1.5450494289398193,
+                  -1.4173164367675781,
+                  -0.8326454758644104,
+                  -0.8181838393211365,
+                  -0.0004095529147889465,
+                  -0.47904905676841736,
+                  -0.8220034837722778,
+                  -0.8220034837722778,
+                  -0.18659527599811554,
+                  -0.6269552707672119,
+                  -0.8117953538894653,
+                  -0.09039761126041412,
+                  -1.6210269927978516,
+                  -0.8211124539375305,
+                  -0.8156944513320923,
+                  -1.5407845973968506,
+                  -1.5362963676452637,
+                  -1.5302236080169678,
+                  -1.5122233629226685,
+                  -1.194793939590454,
+                  -0.41483399271965027,
+                  -0.39470985531806946,
+                  -0.38029006123542786,
+                  -0.5431654453277588,
+                  -0.28145870566368103,
+                  -0.28145870566368103,
+                  -1.4989298582077026,
+                  -0.030412934720516205,
+                  -1.525436520576477,
+                  -0.27772650122642517,
+                  -1.4896247386932373,
+                  -1.798047423362732,
+                  -1.246159315109253,
+                  -0.23314453661441803,
+                  -0.21603204309940338,
+                  0.03185012564063072,
+                  0,
+                  -2.242316246032715,
+                  -0.2785801291465759,
+                  -3.459780693054199,
+                  4.167999744415283,
+                  -2.2438416481018066,
+                  -0.7707054615020752,
+                  -0.7707054615020752,
+                  -0.7703670263290405,
+                  -0.7703670263290405,
+                  0,
+                  -2.998687267303467,
+                  -2.86576247215271,
+                  -0.22921441495418549,
+                  -0.40857723355293274,
+                  0,
+                  -0.2785801291465759,
+                  -5.893777370452881,
+                  4.5954976081848145,
+                  -0.29785284399986267,
+                  -0.5092334747314453,
+                  -0.5092334747314453,
+                  -0.5092334747314453,
+                  -1.4024969339370728,
+                  -0.5065898895263672,
+                  -0.5065898895263672,
+                  -0.5065898895263672,
+                  -0.5064268112182617,
+                  -0.5064268112182617,
+                  -0.5064268112182617,
+                  0,
+                  0,
+                  -0.7537896037101746,
+                  -0.7537896037101746,
+                  -1.3783984184265137,
+                  -1.364291787147522,
+                  -0.7422091364860535,
+                  -0.7422091364860535,
+                  -0.07470515370368958,
+                  0,
+                  12.876442909240723,
+                  8.132250785827637,
+                  6.389686584472656,
+                  6.389686584472656,
+                  12.511751174926758,
+                  12.457964897155762,
+                  6.367133617401123,
+                  6.367133617401123,
+                  6.2183637619018555,
+                  2.330772638320923,
+                  12.369650840759277,
+                  4.2744526863098145,
+                  4.2744526863098145,
+                  6.34998083114624,
+                  6.34998083114624,
+                  0.01116945780813694,
+                  7.875588893890381,
+                  -1.4829288721084595,
+                  -1.4829288721084595,
+                  -0.9775104522705078,
+                  -2.6539318561553955,
+                  -0.8816017508506775,
+                  -1.2288044691085815,
+                  -1.307592511177063,
+                  -1.0583852529525757,
+                  -1.9825568199157715,
+                  -1.2063313722610474,
+                  -1.0284974575042725,
+                  -1.0284974575042725,
+                  -1.0284974575042725,
+                  -0.5995320677757263,
+                  -1.5624058246612549,
+                  -0.5560327172279358,
+                  -0.692237913608551,
+                  -1.3636696338653564,
+                  -0.8575864434242249,
+                  -0.8575864434242249,
+                  -3.8887622356414795,
+                  -1.168764352798462,
+                  -1.3035833835601807,
+                  -0.931420624256134,
+                  -0.29785284399986267,
+                  -0.2224704921245575,
+                  -0.6854486465454102,
+                  -1.3039040565490723,
+                  -0.6903063058853149,
+                  -0.9759829640388489,
+                  -0.9833619594573975,
+                  -0.9821377396583557,
+                  -0.976047933101654,
+                  -1.102793574333191,
+                  -1.102793574333191,
+                  -0.9649341702461243,
+                  -0.9530919790267944,
+                  -1.3878570795059204,
+                  -1.1979154348373413,
+                  -0.7585395574569702,
+                  -1.701247215270996,
+                  -0.47904905676841736,
+                  -1.6768534183502197,
+                  -0.08951083570718765,
+                  -0.6070461869239807,
+                  -0.6963852047920227,
+                  -0.7194892168045044,
+                  -0.7194892168045044,
+                  -0.7194892168045044,
+                  -0.5048181414604187,
+                  -0.5048181414604187,
+                  -6.079981803894043,
+                  -0.7097185254096985,
+                  -1.17588472366333,
+                  -0.1726101189851761,
+                  -0.12223324179649353,
+                  -0.34300732612609863,
+                  -0.4493691325187683,
+                  -0.4493691325187683,
+                  -0.08919505029916763,
+                  -0.9160856604576111,
+                  -1.283054232597351,
+                  -0.42582061886787415,
+                  -0.5660585761070251,
+                  -0.39784517884254456,
+                  -1.423195242881775,
+                  -0.3273562490940094,
+                  -0.6986477971076965,
+                  -0.5345187783241272,
+                  -0.4680423438549042,
+                  -0.43121302127838135,
+                  -0.8303384780883789,
+                  -0.12688493728637695,
+                  -0.12688493728637695,
+                  -1.6286380290985107,
+                  -0.5263552665710449,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1.5550741713869745
+                ],
+                [
+                  -0.6953124403953552,
+                  -0.009354167617857456,
+                  -0.5849975347518921,
+                  -0.25708314776420593,
+                  -1.0855194330215454,
+                  0.6184666156768799,
+                  -0.03502442315220833,
+                  -1.0580674409866333,
+                  -0.010929960757493973,
+                  -0.43505191802978516,
+                  -3.6226329803466797,
+                  3.209784746170044,
+                  -0.41373303532600403,
+                  -0.3491988778114319,
+                  -0.5992948412895203,
+                  -1.1559127569198608,
+                  -0.3687838912010193,
+                  -0.3687838912010193,
+                  0,
+                  -0.3115173578262329,
+                  -0.36325857043266296,
+                  -0.36325857043266296,
+                  -0.05769473686814308,
+                  -0.22453388571739197,
+                  -0.5742407441139221,
+                  -0.008268080651760101,
+                  3.2095723152160645,
+                  -3.5509891510009766,
+                  -0.03632842004299164,
+                  -0.5520418286323547,
+                  -0.549534261226654,
+                  -0.5450353026390076,
+                  -0.5224586129188538,
+                  -0.48607131838798523,
+                  -0.17170484364032745,
+                  -0.15746288001537323,
+                  -0.1467718482017517,
+                  -0.2420198917388916,
+                  -0.12294475734233856,
+                  -0.12294475734233856,
+                  -0.513160765171051,
+                  -0.00687335804104805,
+                  -0.5538422465324402,
+                  -0.1277311146259308,
+                  -0.5119891166687012,
+                  -1.0344481468200684,
+                  -1.2624177932739258,
+                  -0.09410709142684937,
+                  -0.08672988414764404,
+                  -0.2514200508594513,
+                  0,
+                  -0.6537913084030151,
+                  0,
+                  -0.0682755559682846,
+                  -0.2020399421453476,
+                  -0.3714744746685028,
+                  -0.2721497714519501,
+                  -0.2721497714519501,
+                  -0.27092042565345764,
+                  -0.27092042565345764,
+                  -3.5551257133483887,
+                  -1.1757177114486694,
+                  0,
+                  0,
+                  -0.1057068258523941,
+                  0,
+                  0,
+                  -0.28586024045944214,
+                  -0.42627355456352234,
+                  -0.33855175971984863,
+                  -0.14586973190307617,
+                  -0.20832455158233643,
+                  -0.14586973190307617,
+                  -0.465738445520401,
+                  -0.16468310356140137,
+                  -0.16468310356140137,
+                  -0.16468310356140137,
+                  -0.16468863189220428,
+                  -0.16468863189220428,
+                  -0.16468863189220428,
+                  -0.20096436142921448,
+                  -0.060001447796821594,
+                  -0.24334922432899475,
+                  -0.24334922432899475,
+                  -0.46017634868621826,
+                  -0.45699939131736755,
+                  -0.23920729756355286,
+                  -0.23920729756355286,
+                  -0.1770852953195572,
+                  -0.021727176383137703,
+                  -0.9804686307907104,
+                  -0.05035075917840004,
+                  -0.23404575884342194,
+                  -0.23404575884342194,
+                  -0.4408087730407715,
+                  -0.4372892677783966,
+                  -0.23165825009346008,
+                  -0.23165825009346008,
+                  0,
+                  -1.0292905569076538,
+                  -0.4324847459793091,
+                  -0.13055995106697083,
+                  -0.13055995106697083,
+                  -0.23009495437145233,
+                  -0.23009495437145233,
+                  -0.09903950244188309,
+                  -0.033680252730846405,
+                  6.912861347198486,
+                  6.912861347198486,
+                  3.5316083431243896,
+                  10.35840892791748,
+                  3.5204482078552246,
+                  13.003914833068848,
+                  10.393990516662598,
+                  11.296916961669922,
+                  2.33246111869812,
+                  10.3518648147583,
+                  4.592049598693848,
+                  4.592049598693848,
+                  4.592049598693848,
+                  3.3100903034210205,
+                  -1.3858562707901,
+                  -0.4977518916130066,
+                  -0.6537913084030151,
+                  -1.384717345237732,
+                  -0.7632338404655457,
+                  -0.7632338404655457,
+                  -1.0292905569076538,
+                  -0.8343862891197205,
+                  -1.8628286123275757,
+                  -0.7554524540901184,
+                  -0.30531612038612366,
+                  -0.24285779893398285,
+                  -2.788804054260254,
+                  -1.4429408311843872,
+                  -0.5204799175262451,
+                  -1.2916244268417358,
+                  -1.309004306793213,
+                  -1.2817102670669556,
+                  -1.2523791790008545,
+                  -0.8018897771835327,
+                  -0.8018897771835327,
+                  -1.2178419828414917,
+                  -1.1956403255462646,
+                  -0.982414960861206,
+                  -0.8703353404998779,
+                  -0.5542431473731995,
+                  -1.015020489692688,
+                  -0.3115173578262329,
+                  -0.9927818179130554,
+                  -0.9785230755805969,
+                  -0.42292264103889465,
+                  -0.4496397078037262,
+                  -0.4883895516395569,
+                  -0.4883895516395569,
+                  -0.4883895516395569,
+                  -0.33030715584754944,
+                  -0.33030715584754944,
+                  -1.2368309497833252,
+                  -0.49616965651512146,
+                  -0.8238891959190369,
+                  -0.2720893323421478,
+                  -0.2565772831439972,
+                  -3.6372194290161133,
+                  -0.2983351945877075,
+                  -0.2983351945877075,
+                  -0.16658297181129456,
+                  -2.762348175048828,
+                  -0.8120911717414856,
+                  -0.15163066983222961,
+                  -0.3835115432739258,
+                  -0.7470808029174805,
+                  -0.9121311902999878,
+                  -0.24075137078762054,
+                  -0.34168195724487305,
+                  -0.3289482891559601,
+                  -0.29155707359313965,
+                  -0.3049316704273224,
+                  -0.42915672063827515,
+                  -0.0865556001663208,
+                  -0.0865556001663208,
+                  -0.9001796841621399,
+                  -0.32540297508239746,
+                  -1.411813497543335,
+                  -1.411813497543335,
+                  -1.4095640182495117,
+                  -1.4095640182495117,
+                  0.4936184716671967
+                ],
+                [
+                  -0.9300864338874817,
+                  -0.589217483997345,
+                  0.8032092452049255,
+                  -0.8042532205581665,
+                  0,
+                  -2.7427754402160645,
+                  -0.03346410393714905,
+                  -1.052815318107605,
+                  -0.869274377822876,
+                  -0.41792845726013184,
+                  -0.36086952686309814,
+                  -0.41645368933677673,
+                  -0.3984280228614807,
+                  -0.330156534910202,
+                  -0.5133735537528992,
+                  2.0874595642089844,
+                  -2.493957757949829,
+                  -0.04702894389629364,
+                  -0.6907514333724976,
+                  -1.5794260501861572,
+                  -0.30695033073425293,
+                  -0.30695033073425293,
+                  -0.06660107523202896,
+                  -0.25135958194732666,
+                  -2.1648812294006348,
+                  -0.0004151337780058384,
+                  -0.573022723197937,
+                  -0.3478046655654907,
+                  -0.2645123600959778,
+                  -0.4832288920879364,
+                  -0.4820842742919922,
+                  -0.47523295879364014,
+                  -0.43359798192977905,
+                  -0.47443389892578125,
+                  -0.16771335899829865,
+                  -0.15273098647594452,
+                  -0.13837231695652008,
+                  -0.24653245508670807,
+                  -0.1256292313337326,
+                  -0.1256292313337326,
+                  -0.4178634583950043,
+                  -0.8605108261108398,
+                  -0.48152098059654236,
+                  -1.002850890159607,
+                  -0.4197194576263428,
+                  -1.8825671672821045,
+                  3.3810465335845947,
+                  -0.08375049382448196,
+                  -0.07394378632307053,
+                  -0.1555773764848709,
+                  -0.26424655318260193,
+                  0.9761295318603516,
+                  -1.5212135314941406,
+                  -0.5711948275566101,
+                  -3.282593250274658,
+                  0.622123122215271,
+                  -0.21997936069965363,
+                  -0.21997936069965363,
+                  -0.217191681265831,
+                  -0.217191681265831,
+                  -0.041377123445272446,
+                  -0.11586302518844604,
+                  0,
+                  0,
+                  -0.10649748891592026,
+                  -1.401842713356018,
+                  -0.4241446256637573,
+                  -1.0357002019882202,
+                  -0.36772918701171875,
+                  0.6529786586761475,
+                  -0.13705326616764069,
+                  -0.13705326616764069,
+                  -0.13705326616764069,
+                  -0.37481850385665894,
+                  -0.13474087417125702,
+                  -0.13474087417125702,
+                  -0.13474087417125702,
+                  -0.1341487020254135,
+                  -0.1341487020254135,
+                  -0.1341487020254135,
+                  0,
+                  0,
+                  -0.19697578251361847,
+                  -0.19697578251361847,
+                  -0.37045055627822876,
+                  -0.36760589480400085,
+                  -0.19322937726974487,
+                  -0.19322937726974487,
+                  -0.1505480408668518,
+                  0,
+                  -0.2631005644798279,
+                  -0.025308014824986458,
+                  -0.1928998827934265,
+                  -0.1928998827934265,
+                  -0.3620797395706177,
+                  -0.3589590787887573,
+                  -0.19077850878238678,
+                  -0.19077850878238678,
+                  -2.6849863529205322,
+                  5.602749824523926,
+                  -0.34409621357917786,
+                  0,
+                  0,
+                  -0.187734454870224,
+                  -0.187734454870224,
+                  -0.11188337206840515,
+                  -0.007763206493109465,
+                  -0.1869775801897049,
+                  -0.1869775801897049,
+                  -0.1015765517950058,
+                  -0.2822284996509552,
+                  -0.09902945905923843,
+                  0,
+                  0,
+                  -1.716261625289917,
+                  1.4706707000732422,
+                  0,
+                  -0.1230744794011116,
+                  -0.1230744794011116,
+                  -0.1230744794011116,
+                  -0.08134111016988754,
+                  7.876494884490967,
+                  1.8694015741348267,
+                  4.773098468780518,
+                  8.178174018859863,
+                  5.9162092208862305,
+                  5.9162092208862305,
+                  8.288018226623535,
+                  9.745070457458496,
+                  4.0129475593566895,
+                  6.007418155670166,
+                  1.68873131275177,
+                  1.7167450189590454,
+                  12.153380393981934,
+                  -0.9221986532211304,
+                  -0.46172380447387695,
+                  -0.2862229645252228,
+                  -0.25466516613960266,
+                  -0.2238626778125763,
+                  -0.19531755149364471,
+                  -0.7638849020004272,
+                  -0.7638849020004272,
+                  -0.1561823934316635,
+                  -0.1345243901014328,
+                  -0.9864602088928223,
+                  -0.9031723737716675,
+                  -0.569203794002533,
+                  -0.9453840851783752,
+                  -1.3713923692703247,
+                  -0.878450334072113,
+                  -5.737311363220215,
+                  -0.3538932204246521,
+                  -0.3866456151008606,
+                  -0.4449784755706787,
+                  -0.4449784755706787,
+                  -0.4449784755706787,
+                  -0.3015665113925934,
+                  -0.3015665113925934,
+                  -1.2371561527252197,
+                  -0.43758711218833923,
+                  -0.7789367437362671,
+                  -0.2501612603664398,
+                  -0.22253894805908203,
+                  -0.47966811060905457,
+                  -0.29834288358688354,
+                  -0.29834288358688354,
+                  -0.1724439263343811,
+                  -1.855189323425293,
+                  -0.7656789422035217,
+                  -0.15563347935676575,
+                  -0.33238422870635986,
+                  -0.598913311958313,
+                  -0.9034152626991272,
+                  -0.18099406361579895,
+                  -0.35663309693336487,
+                  -0.3105441927909851,
+                  -0.27608877420425415,
+                  -0.2696075141429901,
+                  -0.42468276619911194,
+                  -0.08136650919914246,
+                  -0.08136650919914246,
+                  -0.8051534295082092,
+                  -0.2841968536376953,
+                  -0.934755265712738,
+                  -0.934755265712738,
+                  -0.9314059615135193,
+                  -0.9314059615135193,
+                  0.38662532832396407
+                ],
+                [
+                  -0.6224532723426819,
+                  -0.14316143095493317,
+                  -0.14316143095493317,
+                  -0.370705246925354,
+                  -8.533160209655762,
+                  8.591903686523438,
+                  -0.018567798659205437,
+                  -0.9751090407371521,
+                  -0.053997453302145004,
+                  -0.42494839429855347,
+                  -0.26611119508743286,
+                  -0.26611119508743286,
+                  -0.2920043170452118,
+                  -0.23935779929161072,
+                  -0.3555647134780884,
+                  -0.5610308051109314,
+                  -0.28593549132347107,
+                  -0.21879786252975464,
+                  -0.009627453982830048,
+                  -0.45696210861206055,
+                  -0.2392413318157196,
+                  -0.2392413318157196,
+                  -1.1559301614761353,
+                  -1.3696115016937256,
+                  3.5386950969696045,
+                  -1.051299810409546,
+                  -0.5157094597816467,
+                  -0.24704207479953766,
+                  -0.19446265697479248,
+                  -0.34145691990852356,
+                  -0.3402411937713623,
+                  -0.33524611592292786,
+                  -0.29530343413352966,
+                  -0.34426426887512207,
+                  -0.11819251626729965,
+                  -0.11093281209468842,
+                  -0.10026410967111588,
+                  -0.17998746037483215,
+                  -0.09227288514375687,
+                  -0.09227288514375687,
+                  -0.27698028087615967,
+                  -0.051991987973451614,
+                  -0.31907328963279724,
+                  -0.14205484092235565,
+                  -0.2801409363746643,
+                  -8.559840202331543,
+                  -1.8565900325775146,
+                  0,
+                  0,
+                  -1.6619181632995605,
+                  -1.7733298540115356,
+                  -0.14431534707546234,
+                  -0.06296705454587936,
+                  0,
+                  -1.6619181632995605,
+                  -0.0246224794536829,
+                  -0.09426110237836838,
+                  -0.09426110237836838,
+                  -0.09253869950771332,
+                  -0.09253869950771332,
+                  0,
+                  5.1424784660339355,
+                  -1.6619181632995605,
+                  0,
+                  -0.12527835369110107,
+                  -0.03101288340985775,
+                  0,
+                  -0.1144091859459877,
+                  -0.2722952663898468,
+                  -0.05265986919403076,
+                  -0.05069741606712341,
+                  -0.06808711588382721,
+                  -0.05069741606712341,
+                  -0.10941760987043381,
+                  -0.05405096337199211,
+                  -0.05405096337199211,
+                  -0.05405096337199211,
+                  -0.053222253918647766,
+                  -0.053222253918647766,
+                  -0.053222253918647766,
+                  -0.042184311896562576,
+                  -0.0156323853880167,
+                  -0.06989772617816925,
+                  -0.06989772617816925,
+                  -0.10316143929958344,
+                  -0.10079313069581985,
+                  -0.06626472622156143,
+                  -0.06626472622156143,
+                  -0.13909383118152618,
+                  0,
+                  -8.416982650756836,
+                  0,
+                  -0.013662134297192097,
+                  -0.013662134297192097,
+                  -0.01944509521126747,
+                  -0.0189681239426136,
+                  -0.012656928971409798,
+                  -0.012656928971409798,
+                  0,
+                  0,
+                  -0.0184541717171669,
+                  0,
+                  0,
+                  -0.012057936750352383,
+                  -0.012057936750352383,
+                  0,
+                  0,
+                  -0.012062184512615204,
+                  -0.012062184512615204,
+                  -0.008776817470788956,
+                  -0.017342902719974518,
+                  -0.008172648027539253,
+                  -8.320466995239258,
+                  0,
+                  0,
+                  -0.8874747157096863,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.3455924689769745,
+                  0,
+                  0,
+                  0,
+                  0,
+                  5.986730575561523,
+                  4.697329044342041,
+                  5.783998489379883,
+                  5.782538890838623,
+                  5.7585062980651855,
+                  5.718551158905029,
+                  7.151430130004883,
+                  7.151430130004883,
+                  5.649682998657227,
+                  5.582607746124268,
+                  -0.9155794978141785,
+                  -0.8277382850646973,
+                  -0.49315154552459717,
+                  -0.7950934171676636,
+                  -0.45696210861206055,
+                  -0.756986141204834,
+                  -0.3455924689769745,
+                  -0.3730393350124359,
+                  -0.3708498179912567,
+                  -0.4148133099079132,
+                  -0.4148133099079132,
+                  -0.4148133099079132,
+                  -0.2813062369823456,
+                  -0.2813062369823456,
+                  -1.218875765800476,
+                  -0.4127853214740753,
+                  -0.748290479183197,
+                  -0.2329900711774826,
+                  -0.20659810304641724,
+                  -0.4558637738227844,
+                  -0.2806457579135895,
+                  -0.2806457579135895,
+                  -0.16011224687099457,
+                  -0.7479308247566223,
+                  -0.7707604765892029,
+                  -0.17589132487773895,
+                  -0.29849088191986084,
+                  -0.2947647273540497,
+                  -0.9238007664680481,
+                  -0.1937357783317566,
+                  -0.39981576800346375,
+                  -0.3030471205711365,
+                  -0.2793375849723816,
+                  -0.2577371597290039,
+                  -0.46649548411369324,
+                  -0.0914059653878212,
+                  -0.0914059653878212,
+                  -0.7974504232406616,
+                  -0.28907305002212524,
+                  -0.12755419313907623,
+                  -0.12755419313907623,
+                  -0.10978615283966064,
+                  -0.10978615283966064,
+                  0.013726644026968517
+                ],
+                [
+                  -1.3729438781738281,
+                  -0.2699607312679291,
+                  -0.4705049693584442,
+                  -0.7743897438049316,
+                  -0.789666473865509,
+                  -0.9426069855690002,
+                  -7.281571388244629,
+                  6.423162460327148,
+                  -1.2685976028442383,
+                  -2.003817558288574,
+                  -0.6714219450950623,
+                  -0.9203920364379883,
+                  -0.794067919254303,
+                  -0.656288743019104,
+                  -1.085936427116394,
+                  1.3004029989242554,
+                  -5.941341400146484,
+                  -0.1287945657968521,
+                  -0.5160408616065979,
+                  3.7525696754455566,
+                  -0.6153344511985779,
+                  -0.6153344511985779,
+                  -0.32062122225761414,
+                  -0.777803897857666,
+                  -0.5607388615608215,
+                  -0.12681487202644348,
+                  -1.1981173753738403,
+                  -0.682804524898529,
+                  -0.5340282917022705,
+                  -1.017899990081787,
+                  -1.0149918794631958,
+                  -1.0070165395736694,
+                  -0.9825412631034851,
+                  -0.9419264197349548,
+                  -0.32453781366348267,
+                  -0.30477115511894226,
+                  -0.27627018094062805,
+                  -0.4814511835575104,
+                  -0.2512851059436798,
+                  -0.2512851059436798,
+                  -0.9762636423110962,
+                  -0.016010263934731483,
+                  -1.0251482725143433,
+                  -0.5167263150215149,
+                  -0.9753705263137817,
+                  -0.5891745686531067,
+                  -0.32022038102149963,
+                  -0.19622090458869934,
+                  -0.17605435848236084,
+                  -0.526770293712616,
+                  -0.009325542487204075,
+                  -0.7704213261604309,
+                  -0.44750484824180603,
+                  -0.2643781006336212,
+                  -0.624313235282898,
+                  -0.5024265646934509,
+                  -0.5113115310668945,
+                  -0.5113115310668945,
+                  -0.5086663961410522,
+                  -0.5086663961410522,
+                  -0.18158766627311707,
+                  -0.0977020189166069,
+                  -0.0977020189166069,
+                  0,
+                  -0.18462426960468292,
+                  -0.2989591658115387,
+                  -0.14457020163536072,
+                  -0.7123729586601257,
+                  -0.8968231678009033,
+                  -0.41383835673332214,
+                  -0.31547319889068604,
+                  -0.40520912408828735,
+                  -0.31547319889068604,
+                  -0.9582732915878296,
+                  -0.3392176926136017,
+                  -0.3392176926136017,
+                  -0.3392176926136017,
+                  -0.33936813473701477,
+                  -0.33936813473701477,
+                  -0.33936813473701477,
+                  -0.28514328598976135,
+                  -0.08089027553796768,
+                  -0.49561792612075806,
+                  -0.49561792612075806,
+                  -0.9491493701934814,
+                  -0.9434374570846558,
+                  -0.4885225296020508,
+                  -0.4885225296020508,
+                  -0.3374176621437073,
+                  0,
+                  -0.5623694062232971,
+                  -0.10642949491739273,
+                  -0.4883725345134735,
+                  -0.4883725345134735,
+                  -0.9333580732345581,
+                  -0.9269954562187195,
+                  -0.48465877771377563,
+                  -0.48465877771377563,
+                  -0.06899669021368027,
+                  -0.5115938186645508,
+                  -0.918292224407196,
+                  -0.17184439301490784,
+                  -0.17184439301490784,
+                  -0.48222097754478455,
+                  -0.48222097754478455,
+                  -0.4013923704624176,
+                  -0.06651704013347626,
+                  -0.4812237620353699,
+                  -0.4812237620353699,
+                  -0.25090137124061584,
+                  -0.7253678441047668,
+                  -0.24639350175857544,
+                  -0.022068534046411514,
+                  -0.04101928323507309,
+                  -1.8170881271362305,
+                  0.9320720434188843,
+                  0,
+                  -0.319940447807312,
+                  -0.319940447807312,
+                  -0.319940447807312,
+                  -0.22772786021232605,
+                  -0.466504842042923,
+                  0,
+                  -0.05642234906554222,
+                  -0.1350630521774292,
+                  -1.1272633075714111,
+                  -1.1272633075714111,
+                  -0.4390057921409607,
+                  -4.571022987365723,
+                  3.8160319328308105,
+                  -0.466504842042923,
+                  -0.0781886875629425,
+                  0,
+                  -1.7539728879928589,
+                  -0.18719685077667236,
+                  -0.18719685077667236,
+                  -0.000369974528439343,
+                  -0.00029292545514181256,
+                  -0.0002501239359844476,
+                  -0.00021636481687892228,
+                  -0.4597957134246826,
+                  -0.4597957134246826,
+                  -0.00005469494135468267,
+                  -0.00004385801366879605,
+                  7.694572448730469,
+                  5.907705307006836,
+                  6.956806659698486,
+                  13.109747886657715,
+                  8.203803062438965,
+                  13.025298118591309,
+                  8.393904685974121,
+                  6.754292964935303,
+                  5.431000232696533,
+                  4.4319868087768555,
+                  4.4319868087768555,
+                  4.4319868087768555,
+                  3.6467788219451904,
+                  3.6467788219451904,
+                  -2.7180356979370117,
+                  -0.911453366279602,
+                  -1.660927653312683,
+                  -0.5610366463661194,
+                  -0.49888888001441956,
+                  -1.0050745010375977,
+                  -0.6095977425575256,
+                  -0.6095977425575256,
+                  -0.38635942339897156,
+                  -2.526108503341675,
+                  -1.7168831825256348,
+                  -0.3632732927799225,
+                  -0.7112820148468018,
+                  -0.9622829556465149,
+                  -2.0154738426208496,
+                  -0.4224342107772827,
+                  -0.8458085060119629,
+                  -0.6791225671768188,
+                  -0.6225841641426086,
+                  -0.43808266520500183,
+                  -0.8811943531036377,
+                  -0.1895975023508072,
+                  -0.1895975023508072,
+                  -1.728806495666504,
+                  -0.6442879438400269,
+                  -1.2260903120040894,
+                  -1.2260903120040894,
+                  -1.2108769416809082,
+                  -1.2108769416809082,
+                  0.9887466477015326
+                ],
+                [
+                  -0.7617425918579102,
+                  -0.19666866958141327,
+                  -0.3207264840602875,
+                  -0.5668704509735107,
+                  -0.40980562567710876,
+                  -0.5438348650932312,
+                  -0.5124889612197876,
+                  -0.5124889612197876,
+                  -0.24800944328308105,
+                  -0.7472660541534424,
+                  -0.3918628990650177,
+                  -0.5316788554191589,
+                  -0.5039274096488953,
+                  -0.37570738792419434,
+                  -0.542216420173645,
+                  -0.5153515338897705,
+                  -0.7968218326568604,
+                  -0.25475555658340454,
+                  -0.12538357079029083,
+                  -0.09879864752292633,
+                  -0.3844442367553711,
+                  -0.3844442367553711,
+                  -0.3015621602535248,
+                  -0.6741864681243896,
+                  -0.24329997599124908,
+                  -0.1155320256948471,
+                  3.58732008934021,
+                  -3.561089515686035,
+                  -0.17859196662902832,
+                  -0.5272402167320251,
+                  -0.5315214991569519,
+                  -0.520903468132019,
+                  -0.3960683047771454,
+                  -0.6069132089614868,
+                  -0.20397625863552094,
+                  -0.18311797082424164,
+                  -0.16292403638362885,
+                  -0.33521342277526855,
+                  -0.16194511950016022,
+                  -0.16194511950016022,
+                  -0.36246493458747864,
+                  -0.10697422921657562,
+                  -0.5948668122291565,
+                  -0.2686447501182556,
+                  -0.39288824796676636,
+                  -0.3614693582057953,
+                  -0.13000275194644928,
+                  -0.10853862017393112,
+                  -0.09528994560241699,
+                  -0.27684682607650757,
+                  -0.014599989168345928,
+                  -0.4187713861465454,
+                  -0.22120417654514313,
+                  -0.1762252002954483,
+                  -0.2894258499145508,
+                  -0.2558896839618683,
+                  -0.23393112421035767,
+                  -0.23393112421035767,
+                  -0.2279970496892929,
+                  -0.2279970496892929,
+                  -0.09005025029182434,
+                  -0.07026372849941254,
+                  -0.07026372849941254,
+                  0,
+                  -0.17570623755455017,
+                  -0.10321710258722305,
+                  -0.07002772390842438,
+                  -1.3607429265975952,
+                  1.384817123413086,
+                  -0.04789624363183975,
+                  -0.15114909410476685,
+                  -0.17057940363883972,
+                  -0.15114909410476685,
+                  -0.27227982878685,
+                  -0.14789068698883057,
+                  -0.14789068698883057,
+                  -0.14789068698883057,
+                  -0.14433155953884125,
+                  -0.14433155953884125,
+                  -0.14433155953884125,
+                  -0.024726614356040955,
+                  -0.012572516687214375,
+                  -0.18446572124958038,
+                  -0.18446572124958038,
+                  -0.2517847716808319,
+                  -0.24812962114810944,
+                  -0.16879363358020782,
+                  -0.16879363358020782,
+                  1.7495453357696533,
+                  -0.548866331577301,
+                  -0.1562320590019226,
+                  -1.3295706510543823,
+                  -0.14043870568275452,
+                  -0.14043870568275452,
+                  -0.20329611003398895,
+                  -0.1987200677394867,
+                  -0.12904147803783417,
+                  -0.12904147803783417,
+                  -0.01195308193564415,
+                  -0.07099312543869019,
+                  -0.19261705875396729,
+                  -0.010893014259636402,
+                  -0.010893014259636402,
+                  -0.12548217177391052,
+                  -0.12548217177391052,
+                  -0.096223384141922,
+                  -1.3145806789398193,
+                  -0.1084410548210144,
+                  -0.1084410548210144,
+                  -0.07458464056253433,
+                  -0.16012682020664215,
+                  -0.07060161978006363,
+                  0,
+                  0,
+                  0,
+                  -1.063174843788147,
+                  -3.502082347869873,
+                  -0.047056231647729874,
+                  -0.047056231647729874,
+                  -0.047056231647729874,
+                  -0.009381270036101341,
+                  -0.06314629316329956,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.05790434032678604,
+                  -0.06400898844003677,
+                  -0.06400898844003677,
+                  -0.06314629316329956,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.06227639690041542,
+                  -0.06227639690041542,
+                  0,
+                  0,
+                  -0.07835044711828232,
+                  -0.0661485567688942,
+                  0,
+                  -0.0990118458867073,
+                  0,
+                  -0.097750723361969,
+                  0,
+                  0,
+                  -0.04244973883032799,
+                  -0.04174794629216194,
+                  -0.04174794629216194,
+                  -0.04174794629216194,
+                  -0.03016800247132778,
+                  -0.03016800247132778,
+                  12.499139785766602,
+                  5.681910991668701,
+                  8.532809257507324,
+                  1.8355448246002197,
+                  1.8302900791168213,
+                  10.445018768310547,
+                  2.8489038944244385,
+                  2.8489038944244385,
+                  1.7853906154632568,
+                  -1.4230910539627075,
+                  -1.2120517492294312,
+                  -0.25621071457862854,
+                  -0.38706034421920776,
+                  -0.5286456346511841,
+                  -1.5228877067565918,
+                  -0.29400235414505005,
+                  -0.6126165986061096,
+                  -0.4721856117248535,
+                  -0.43607088923454285,
+                  -0.31711938977241516,
+                  -0.6484695076942444,
+                  -0.1321258395910263,
+                  -0.1321258395910263,
+                  -1.0810258388519287,
+                  -0.3783215284347534,
+                  -0.23596088588237762,
+                  -0.23596088588237762,
+                  -0.23778298497200012,
+                  -0.23778298497200012,
+                  0.04648870527970619
+                ],
+                [
+                  -1.2838613986968994,
+                  -0.9898684024810791,
+                  -1.003332495689392,
+                  3.596994400024414,
+                  -0.23547717928886414,
+                  -0.31765785813331604,
+                  -0.31494247913360596,
+                  -0.31494247913360596,
+                  -0.14382806420326233,
+                  -0.5578874349594116,
+                  -0.22400955855846405,
+                  -0.2932622730731964,
+                  -0.28434160351753235,
+                  -0.21477778255939484,
+                  -0.2893471419811249,
+                  -0.3250542879104614,
+                  -0.4894877076148987,
+                  -0.1306084245443344,
+                  -0.07217709720134735,
+                  -0.057248834520578384,
+                  -0.2159249633550644,
+                  -0.2159249633550644,
+                  1.0034966468811035,
+                  2.868798017501831,
+                  -1.8290462493896484,
+                  -1.8055953979492188,
+                  -0.13944925367832184,
+                  -0.29254117608070374,
+                  -0.12487070262432098,
+                  -0.25775617361068726,
+                  -0.26071932911872864,
+                  -0.25428715348243713,
+                  -0.19009929895401,
+                  -0.31110095977783203,
+                  -0.1027911826968193,
+                  -0.0920928567647934,
+                  -0.08169472962617874,
+                  -0.17331522703170776,
+                  -0.0817205086350441,
+                  -0.0817205086350441,
+                  -0.16602188348770142,
+                  -0.046448636800050735,
+                  -0.3026899993419647,
+                  -0.13021165132522583,
+                  -0.18944495916366577,
+                  -0.15557348728179932,
+                  -0.04123679921030998,
+                  -0.05474334582686424,
+                  -0.047908466309309006,
+                  -0.14653034508228302,
+                  -0.011807890608906746,
+                  -0.21103869378566742,
+                  -0.0854392871260643,
+                  -0.09022943675518036,
+                  -0.15941275656223297,
+                  -0.12160399556159973,
+                  -0.10640551149845123,
+                  -0.10640551149845123,
+                  -0.10319530963897705,
+                  -0.10319530963897705,
+                  -0.03712695837020874,
+                  -0.033388346433639526,
+                  -0.033388346433639526,
+                  0,
+                  -0.11419481784105301,
+                  -0.04987786337733269,
+                  -0.009703141637146473,
+                  -0.20272214710712433,
+                  -0.1361975371837616,
+                  -0.0633590891957283,
+                  -0.0742529109120369,
+                  -0.09764502942562103,
+                  -0.0742529109120369,
+                  -0.1253722608089447,
+                  -0.07541070133447647,
+                  -0.07541070133447647,
+                  -0.07541070133447647,
+                  -0.07348566502332687,
+                  -0.07348566502332687,
+                  -0.07348566502332687,
+                  -0.039361290633678436,
+                  -0.01727021113038063,
+                  -0.08649993687868118,
+                  -0.08649993687868118,
+                  -0.11234460771083832,
+                  -0.10884365439414978,
+                  -0.07837329804897308,
+                  -0.07837329804897308,
+                  -0.017484862357378006,
+                  -0.017484862357378006,
+                  -0.08686935156583786,
+                  -0.04835079237818718,
+                  -0.07730309665203094,
+                  -0.07730309665203094,
+                  -0.10079661756753922,
+                  -0.09781590104103088,
+                  -0.07050979882478714,
+                  -0.07050979882478714,
+                  -0.013192782178521156,
+                  -0.047771625220775604,
+                  -0.09246629476547241,
+                  -0.010975923389196396,
+                  -0.010975923389196396,
+                  -0.06587633490562439,
+                  -0.06587633490562439,
+                  -0.05262617766857147,
+                  -0.026416553184390068,
+                  -0.06219978258013725,
+                  -0.06219978258013725,
+                  -0.04417423903942108,
+                  -0.10200976580381393,
+                  -0.04032808914780617,
+                  0,
+                  0,
+                  -2.372853994369507,
+                  2.983443260192871,
+                  0,
+                  -0.03184046596288681,
+                  -0.03184046596288681,
+                  -0.03184046596288681,
+                  -0.010570316575467587,
+                  -0.037591300904750824,
+                  0,
+                  0,
+                  -0.0020475368946790695,
+                  0,
+                  0,
+                  -0.032734230160713196,
+                  -0.0007955065811984241,
+                  -1.2561109066009521,
+                  -0.037591300904750824,
+                  -0.0020475368946790695,
+                  0,
+                  -2.336099624633789,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.017520591616630554,
+                  -0.017520591616630554,
+                  0,
+                  0,
+                  -0.018250610679388046,
+                  -0.017939163371920586,
+                  0,
+                  -0.020686747506260872,
+                  0,
+                  -0.019992612302303314,
+                  -1.2545197010040283,
+                  0,
+                  -0.0015580125618726015,
+                  -0.004551728721708059,
+                  -0.004551728721708059,
+                  -0.004551728721708059,
+                  -0.0013302298029884696,
+                  -0.0013302298029884696,
+                  -0.010528904385864735,
+                  -0.004314627032727003,
+                  -0.008093556389212608,
+                  -0.0033663532231003046,
+                  -0.0030242179054766893,
+                  0,
+                  -0.002955700969323516,
+                  -0.002955700969323516,
+                  -0.0025700738187879324,
+                  9.9295015335083,
+                  6.153970718383789,
+                  1.8646925687789917,
+                  7.824194431304932,
+                  2.0917718410491943,
+                  0.8643054962158203,
+                  4.5809245109558105,
+                  -1.2289601564407349,
+                  -0.699953556060791,
+                  -0.6916846036911011,
+                  -0.21385540068149567,
+                  -1.0796940326690674,
+                  -0.20428794622421265,
+                  -0.20428794622421265,
+                  -0.7786489129066467,
+                  -0.25815120339393616,
+                  -1.2929528951644897,
+                  -1.2929528951644897,
+                  -1.3041843175888062,
+                  -1.3041843175888062,
+                  -0.2519904681839626
+                ],
+                [
+                  -0.6435095071792603,
+                  -0.18659332394599915,
+                  -0.2901587188243866,
+                  -0.18659332394599915,
+                  -0.3252851963043213,
+                  -0.4435864984989166,
+                  -0.7420699596405029,
+                  -0.7420699596405029,
+                  -1.034417748451233,
+                  2.267184019088745,
+                  -0.2992610037326813,
+                  -0.40184637904167175,
+                  -0.3931422531604767,
+                  -0.2868860065937042,
+                  -0.3550355136394501,
+                  -0.43190091848373413,
+                  -0.6676486134529114,
+                  -0.18029530346393585,
+                  -0.10160354524850845,
+                  -0.08055111020803452,
+                  -0.2604408860206604,
+                  -0.2604408860206604,
+                  -3.1281957626342773,
+                  -3.1281957626342773,
+                  -0.22967658936977386,
+                  -0.11687009781599045,
+                  -0.2316996455192566,
+                  -0.45711347460746765,
+                  -0.1987215131521225,
+                  -0.39857253432273865,
+                  -0.4029478132724762,
+                  -0.39857396483421326,
+                  -0.27979522943496704,
+                  -0.4921053946018219,
+                  -0.16304874420166016,
+                  -0.1460295468568802,
+                  -0.12951815128326416,
+                  -0.25676974654197693,
+                  -0.1295318901538849,
+                  -0.1295318901538849,
+                  -0.2517261803150177,
+                  -0.5566574335098267,
+                  -0.8321488499641418,
+                  -0.15816384553909302,
+                  -0.2753491997718811,
+                  -0.2661205530166626,
+                  -0.10560726374387741,
+                  -0.047301843762397766,
+                  -0.04017290845513344,
+                  -0.1995142251253128,
+                  -0.01059829443693161,
+                  -0.27644962072372437,
+                  -0.14561636745929718,
+                  -0.147247314453125,
+                  -0.23506894707679749,
+                  -0.1755807101726532,
+                  -0.15611228346824646,
+                  -0.15611228346824646,
+                  -0.15147989988327026,
+                  -0.15147989988327026,
+                  -0.062415629625320435,
+                  -0.04571212828159332,
+                  -0.04571212828159332,
+                  -0.9380733370780945,
+                  -1.4824362993240356,
+                  -0.06959368288516998,
+                  -0.026842396706342697,
+                  -0.26720601320266724,
+                  -0.17660290002822876,
+                  -0.08090955764055252,
+                  -0.09098053723573685,
+                  -0.1253659576177597,
+                  -0.09098053723573685,
+                  -0.16121292114257812,
+                  -0.09118810296058655,
+                  -0.09118810296058655,
+                  -0.09118810296058655,
+                  -0.08846621960401535,
+                  -0.08846621960401535,
+                  -0.08846621960401535,
+                  -0.05258592590689659,
+                  -0.024311574175953865,
+                  -0.11046352237462997,
+                  -0.11046352237462997,
+                  -0.15671668946743011,
+                  -0.1563732624053955,
+                  -0.10026025027036667,
+                  -0.10026025027036667,
+                  -0.041089124977588654,
+                  -0.022966088727116585,
+                  -0.10638240724802017,
+                  -0.06163973733782768,
+                  -0.09425044059753418,
+                  -0.09425044059753418,
+                  -0.15541884303092957,
+                  -0.1549486219882965,
+                  -0.08913169801235199,
+                  -0.08913169801235199,
+                  -0.010378352366387844,
+                  -0.08477681875228882,
+                  -0.15426644682884216,
+                  -0.008178941905498505,
+                  -0.008178941905498505,
+                  -0.08373414725065231,
+                  -0.08373414725065231,
+                  -0.06503687798976898,
+                  -0.031209243461489677,
+                  -0.08163677901029587,
+                  -0.08163677901029587,
+                  -0.04987446591258049,
+                  -0.14553560316562653,
+                  -0.044923484325408936,
+                  0,
+                  0,
+                  0,
+                  -0.8348843455314636,
+                  -0.004092191345989704,
+                  -0.059917330741882324,
+                  -0.059917330741882324,
+                  -0.059917330741882324,
+                  -0.03999902680516243,
+                  -0.07832853496074677,
+                  0,
+                  -0.00020754260185640305,
+                  -0.006395525299012661,
+                  0,
+                  0,
+                  -0.07300001382827759,
+                  -0.07853375375270844,
+                  -0.07853375375270844,
+                  -0.07832853496074677,
+                  -0.005993411410599947,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.078310526907444,
+                  -0.078310526907444,
+                  0,
+                  0,
+                  -0.10111728310585022,
+                  -0.08348049223423004,
+                  0,
+                  -0.1521061658859253,
+                  0,
+                  -0.15135736763477325,
+                  0,
+                  0,
+                  -0.05471565201878548,
+                  -0.052370794117450714,
+                  -0.052370794117450714,
+                  -0.052370794117450714,
+                  -0.03680509701371193,
+                  -0.03680509701371193,
+                  -0.12185878306627274,
+                  -0.06024324521422386,
+                  -0.09553259611129761,
+                  -0.03559267148375511,
+                  -0.0344206802546978,
+                  0,
+                  -0.033625345677137375,
+                  -0.033625345677137375,
+                  -0.03402731195092201,
+                  -3.1301181316375732,
+                  -0.07986905425786972,
+                  0,
+                  -0.07577645778656006,
+                  2.1470789909362793,
+                  9.2424898147583,
+                  0,
+                  4.899481296539307,
+                  4.910177707672119,
+                  4.707725524902344,
+                  4.763544082641602,
+                  7.08341646194458,
+                  0.12262671440839767,
+                  0.12262671440839767,
+                  -1.2865002155303955,
+                  -0.3223683536052704,
+                  -0.30367833375930786,
+                  -0.30367833375930786,
+                  -0.2625957727432251,
+                  -0.2625957727432251,
+                  0.15802697339532684
+                ],
+                [
+                  -0.698702335357666,
+                  -0.23245194554328918,
+                  -0.2933828830718994,
+                  -0.23245194554328918,
+                  -0.3338683545589447,
+                  -0.45571646094322205,
+                  -0.6673669815063477,
+                  -0.6673669815063477,
+                  -0.6810125708580017,
+                  0.034904081374406815,
+                  -0.3103155791759491,
+                  -0.43671953678131104,
+                  -0.4214121997356415,
+                  -0.2974778115749359,
+                  -0.42775624990463257,
+                  -0.4484446942806244,
+                  -0.6918125152587891,
+                  -0.20555931329727173,
+                  -0.09870527684688568,
+                  -0.07834018766880035,
+                  -0.3035796284675598,
+                  -0.3035796284675598,
+                  -0.21015353500843048,
+                  -0.21015353500843048,
+                  -0.3102567493915558,
+                  -0.21015353500843048,
+                  -0.22849832475185394,
+                  -0.4834091067314148,
+                  -0.2047422230243683,
+                  -0.44773441553115845,
+                  -0.4520045816898346,
+                  -0.441168874502182,
+                  -0.34150099754333496,
+                  -0.518345296382904,
+                  -0.16886909306049347,
+                  -0.1513695865869522,
+                  -0.1342633068561554,
+                  -0.2880162000656128,
+                  -0.13406790792942047,
+                  -0.13406790792942047,
+                  -0.3026116192340851,
+                  -0.26810482144355774,
+                  -0.6075419187545776,
+                  -0.16352762281894684,
+                  -0.3307565748691559,
+                  -0.28595736622810364,
+                  -0.09352490305900574,
+                  -0.05503290891647339,
+                  -0.04688454419374466,
+                  -0.2284056544303894,
+                  -0.015256275422871113,
+                  -0.30925077199935913,
+                  -0.16851630806922913,
+                  -0.16304978728294373,
+                  -0.2533336281776428,
+                  -0.1903565526008606,
+                  -0.19397088885307312,
+                  -0.19397088885307312,
+                  -0.1886187642812729,
+                  -0.1886187642812729,
+                  -0.0758117213845253,
+                  -0.056488100439310074,
+                  -0.056488100439310074,
+                  -1.8018628358840942,
+                  0.9785867929458618,
+                  -0.06957226246595383,
+                  -0.018083838745951653,
+                  -0.2801017165184021,
+                  -0.19604401290416718,
+                  -0.08038900792598724,
+                  -0.10588029772043228,
+                  -0.1364639550447464,
+                  -0.10588029772043228,
+                  -0.19242817163467407,
+                  -0.10875292867422104,
+                  -0.10875292867422104,
+                  -0.10875292867422104,
+                  -0.10633023828268051,
+                  -0.10633023828268051,
+                  -0.10633023828268051,
+                  -0.057033721357584,
+                  -0.024988630786538124,
+                  -0.1276375651359558,
+                  -0.1276375651359558,
+                  -0.17569878697395325,
+                  -0.17073458433151245,
+                  -0.12099949270486832,
+                  -0.12099949270486832,
+                  -0.031655360013246536,
+                  -0.02536635659635067,
+                  -0.12300390750169754,
+                  -0.0752883106470108,
+                  -0.11544109880924225,
+                  -0.11544109880924225,
+                  -0.15946300327777863,
+                  -0.15517327189445496,
+                  -0.10572227835655212,
+                  -0.10572227835655212,
+                  -0.008438857272267342,
+                  -0.06984181702136993,
+                  -0.1502401977777481,
+                  -0.005889015272259712,
+                  -0.005889015272259712,
+                  -0.10291488468647003,
+                  -0.10291488468647003,
+                  -0.08499455451965332,
+                  -0.04217219725251198,
+                  -0.09827544540166855,
+                  -0.09827544540166855,
+                  -0.07119321078062057,
+                  -0.14551469683647156,
+                  -0.06573379039764404,
+                  0,
+                  0,
+                  -2.600114107131958,
+                  2.4668421745300293,
+                  0,
+                  -0.04614870622754097,
+                  -0.04614870622754097,
+                  -0.04614870622754097,
+                  -0.003532961942255497,
+                  -0.06462813913822174,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.0600573867559433,
+                  -0.001053827814757824,
+                  -1.4070721864700317,
+                  -0.06462813913822174,
+                  0,
+                  0,
+                  -2.592212438583374,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.06302499026060104,
+                  -0.06302499026060104,
+                  0,
+                  0,
+                  -0.07604604959487915,
+                  -0.06161099672317505,
+                  0,
+                  -0.10801946371793747,
+                  0,
+                  -0.10659658908843994,
+                  -1.404964804649353,
+                  0,
+                  -0.047032903879880905,
+                  -0.042396340519189835,
+                  -0.042396340519189835,
+                  -0.042396340519189835,
+                  -0.032736171036958694,
+                  -0.032736171036958694,
+                  -0.09723968803882599,
+                  -0.048325102776288986,
+                  -0.07563961297273636,
+                  -0.03210566192865372,
+                  -0.031151268631219864,
+                  0,
+                  -0.026500610634684563,
+                  -0.026500610634684563,
+                  -0.029865946620702744,
+                  -2.587735414505005,
+                  -0.05959216505289078,
+                  0,
+                  -0.05959216505289078,
+                  -0.9309529066085815,
+                  -0.09468551725149155,
+                  0,
+                  -0.030838288366794586,
+                  -0.033346984535455704,
+                  -0.029335038736462593,
+                  -0.2432434856891632,
+                  -0.2432434856891632,
+                  -0.00444658612832427,
+                  -0.00444658612832427,
+                  13.27647590637207,
+                  1.3427995443344116,
+                  5.8329854011535645,
+                  5.8329854011535645,
+                  5.836304187774658,
+                  5.836304187774658,
+                  0.1417206450880759
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "emergency"
+      ],
+      [
+        "en",
+        "this is an emergency"
+      ],
+      [
+        "en",
+        "chest pain"
+      ],
+      [
+        "en",
+        "heart attack"
+      ],
+      [
+        "en",
+        "having a heart attack"
+      ],
+      [
+        "en",
+        "stroke symptoms"
+      ],
+      [
+        "en",
+        "severe bleeding"
+      ],
+      [
+        "en",
+        "unconscious"
+      ],
+      [
+        "en",
+        "not breathing"
+      ],
+      [
+        "en",
+        "difficulty breathing"
+      ],
+      [
+        "en",
+        "can't breathe"
+      ],
+      [
+        "en",
+        "cannot breathe"
+      ],
+      [
+        "en",
+        "suicidal thoughts"
+      ],
+      [
+        "en",
+        "want to hurt myself"
+      ],
+      [
+        "en",
+        "need ambulance"
+      ],
+      [
+        "en",
+        "call ambulance"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "hii"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "hi there"
+      ],
+      [
+        "en",
+        "hello there"
+      ],
+      [
+        "en",
+        "hey medi connect"
+      ],
+      [
+        "en",
+        "start"
+      ],
+      [
+        "en",
+        "I have a headache"
+      ],
+      [
+        "en",
+        "headache"
+      ],
+      [
+        "en",
+        "bad headache"
+      ],
+      [
+        "en",
+        "migraine"
+      ],
+      [
+        "en",
+        "severe migraine"
+      ],
+      [
+        "en",
+        "head pain"
+      ],
+      [
+        "en",
+        "my head hurts"
+      ],
+      [
+        "en",
+        "pounding headache"
+      ],
+      [
+        "en",
+        "tension headache"
+      ],
+      [
+        "en",
+        "head ache"
+      ],
+      [
+        "en",
+        "pain in my head"
+      ],
+      [
+        "en",
+        "I have fever"
+      ],
+      [
+        "en",
+        "high fever"
+      ],
+      [
+        "en",
+        "cold and cough"
+      ],
+      [
+        "en",
+        "fever and cold"
+      ],
+      [
+        "en",
+        "running nose"
+      ],
+      [
+        "en",
+        "sore throat"
+      ],
+      [
+        "en",
+        "flu symptoms"
+      ],
+      [
+        "en",
+        "body ache and chills"
+      ],
+      [
+        "en",
+        "sneezing a lot"
+      ],
+      [
+        "en",
+        "coughing badly"
+      ],
+      [
+        "en",
+        "viral fever"
+      ],
+      [
+        "en",
+        "temperature is high"
+      ],
+      [
+        "en",
+        "skin problem"
+      ],
+      [
+        "en",
+        "skin rash"
+      ],
+      [
+        "en",
+        "acne on face"
+      ],
+      [
+        "en",
+        "pimples"
+      ],
+      [
+        "en",
+        "itching all over"
+      ],
+      [
+        "en",
+        "eczema flare up"
+      ],
+      [
+        "en",
+        "skin allergy"
+      ],
+      [
+        "en",
+        "hives on skin"
+      ],
+      [
+        "en",
+        "fungal infection"
+      ],
+      [
+        "en",
+        "ringworm"
+      ],
+      [
+        "en",
+        "dandruff"
+      ],
+      [
+        "en",
+        "hair fall"
+      ],
+      [
+        "en",
+        "dry itchy skin"
+      ],
+      [
+        "en",
+        "stomach pain"
+      ],
+      [
+        "en",
+        "stomach ache"
+      ],
+      [
+        "en",
+        "acidity problem"
+      ],
+      [
+        "en",
+        "gastric issues"
+      ],
+      [
+        "en",
+        "constipation"
+      ],
+      [
+        "en",
+        "diarrhea"
+      ],
+      [
+        "en",
+        "loose motion"
+      ],
+      [
+        "en",
+        "nausea and vomiting"
+      ],
+      [
+        "en",
+        "indigestion"
+      ],
+      [
+        "en",
+        "bloating and gas"
+      ],
+      [
+        "en",
+        "food poisoning"
+      ],
+      [
+        "en",
+        "upset stomach"
+      ],
+      [
+        "en",
+        "digestive problem"
+      ],
+      [
+        "en",
+        "pregnancy question"
+      ],
+      [
+        "en",
+        "irregular periods"
+      ],
+      [
+        "en",
+        "period cramps"
+      ],
+      [
+        "en",
+        "menstrual pain"
+      ],
+      [
+        "en",
+        "pcod symptoms"
+      ],
+      [
+        "en",
+        "pcos help"
+      ],
+      [
+        "en",
+        "gynecologist needed"
+      ],
+      [
+        "en",
+        "birth control advice"
+      ],
+      [
+        "en",
+        "missed period"
+      ],
+      [
+        "en",
+        "my child is sick"
+      ],
+      [
+        "en",
+        "baby has fever"
+      ],
+      [
+        "en",
+        "kid not eating"
+      ],
+      [
+        "en",
+        "toddler vomiting"
+      ],
+      [
+        "en",
+        "infant health"
+      ],
+      [
+        "en",
+        "child vaccination"
+      ],
+      [
+        "en",
+        "my son has rash"
+      ],
+      [
+        "en",
+        "my daughter has cough"
+      ],
+      [
+        "en",
+        "pediatric help"
+      ],
+      [
+        "en",
+        "back pain"
+      ],
+      [
+        "en",
+        "lower back hurts"
+      ],
+      [
+        "en",
+        "joint pain"
+      ],
+      [
+        "en",
+        "knee pain"
+      ],
+      [
+        "en",
+        "arthritis pain"
+      ],
+      [
+        "en",
+        "muscle pain"
+      ],
+      [
+        "en",
+        "sprained ankle"
+      ],
+      [
+        "en",
+        "neck pain"
+      ],
+      [
+        "en",
+        "shoulder pain"
+      ],
+      [
+        "en",
+        "body pain"
+      ],
+      [
+        "en",
+        "feeling stressed"
+      ],
+      [
+        "en",
+        "anxiety attack"
+      ],
+      [
+        "en",
+        "depressed"
+      ],
+      [
+        "en",
+        "cannot sleep"
+      ],
+      [
+        "en",
+        "insomnia"
+      ],
+      [
+        "en",
+        "mental health help"
+      ],
+      [
+        "en",
+        "panic attacks"
+      ],
+      [
+        "en",
+        "feeling worried"
+      ],
+      [
+        "en",
+        "very sad lately"
+      ],
+      [
+        "en",
+        "stress at work"
+      ],
+      [
+        "en",
+        "eye problem"
+      ],
+      [
+        "en",
+        "blurry vision"
+      ],
+      [
+        "en",
+        "red eye"
+      ],
+      [
+        "en",
+        "eye irritation"
+      ],
+      [
+        "en",
+        "need glasses"
+      ],
+      [
+        "en",
+        "vision getting worse"
+      ],
+      [
+        "en",
+        "eyes burning"
+      ],
+      [
+        "en",
+        "dry eyes"
+      ],
+      [
+        "en",
+        "book appointment"
+      ],
+      [
+        "en",
+        "how to book"
+      ],
+      [
+        "en",
+        "schedule appointment"
+      ],
+      [
+        "en",
+        "help me book"
+      ],
+      [
+        "en",
+        "want to book doctor"
+      ],
+      [
+        "en",
+        "make an appointment"
+      ],
+      [
+        "en",
+        "booking help"
+      ],
+      [
+        "en",
+        "show doctors"
+      ],
+      [
+        "en",
+        "list doctors"
+      ],
+      [
+        "en",
+        "available doctors"
+      ],
+      [
+        "en",
+        "find a specialist"
+      ],
+      [
+        "en",
+        "which doctors are available"
+      ],
+      [
+        "en",
+        "show me specialists"
+      ],
+      [
+        "en",
+        "doctor list"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "thanks"
+      ],
+      [
+        "en",
+        "that was helpful"
+      ],
+      [
+        "en",
+        "thanks a lot"
+      ],
+      [
+        "en",
+        "appreciate your help"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {}
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
